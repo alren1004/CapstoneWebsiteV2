@@ -11,6 +11,10 @@
         textarea {
             height: 10em;
             width: 25em;
+            clear: both;
+            margin-left: 180px;
+            margin-top: 10px;
+
 
         }
         comment {
