@@ -48,6 +48,3 @@ crashlytics.properties
 crashlytics-build.properties
 
 ## Temp files to ignore
-footer.html
-header.html
-index.php
