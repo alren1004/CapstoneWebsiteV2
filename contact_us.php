@@ -12,7 +12,7 @@
             height: 10em;
             width: 25em;
             clear: both;
-            margin-left: 180px;
+            margin-left: 50px;
             margin-top: 10px;
 
 
