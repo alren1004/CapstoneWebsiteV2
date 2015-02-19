@@ -67,7 +67,7 @@ li {
 }
 
 .headerNav a:hover {
-    color: #d73444;
+    color: yellow;
 }
 
 .headerNav a.before:before, .headerNav a.after:after {
@@ -140,7 +140,7 @@ label {
     text-align: right;
 }
 
-p {
+#introduction p {
     text-align: center;
 }
 

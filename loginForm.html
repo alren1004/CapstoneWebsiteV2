@@ -1,0 +1,18 @@
+<button id="login" style="float: right">Login</button>
+
+<div id="dialog-form" title="Login">
+    <form method="post" action="landing_page.php" name="loginForm" id="loginForm">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required="true"
+                   class="text ui-widget-content ui-corner-all">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required="true"
+                   class="text ui-widget-content ui-corner-all">
+        </div>
+        <p><a href="registration.php">Click here to register.</a></p>
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </form>
+</div>
