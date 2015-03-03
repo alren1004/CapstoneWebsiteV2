@@ -28,6 +28,8 @@
         if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) {
             // Logged in.
             echo "<h1>You are logged in.</h1>";
+            echo "<p><a href='mentorship_directory.php'>Go to mentorship directory.</a></p>";
+            echo "<p><a href='profile.php'>Go to your profile page.</a></p>";
         } elseif (!empty($_POST['username']) && !empty($_POST['password'])) {
             // Logging in...
             $username = mysql_real_escape_string($_POST['username']);

@@ -1,0 +1,36 @@
+<form id="mentorRegistration">
+
+    <fieldset>
+        <label for="mentee">Are you applying to be a mentee?</label>
+        <input id="mentee" type="checkbox">
+    </fieldset>
+
+    <fieldset>
+        <label for="mentor">Are you applying to be a mentor?</label>
+        <input id="mentor" type="checkbox" />
+        <br/>
+
+        <label for="fieldsSelect">Choose a field to mentor in:</label>
+        <input id="fieldsSelect" list="fields" name="Fields" />
+        <datalist id="fields">
+            <option>Computer Science</option>
+            <option>Web Development</option>
+            <option>Database</option>
+            <option>Networking</option>
+            <option>Informatics</option>
+        </datalist>
+        <br/>
+
+        <label for="contactInfo">Enter your email contact:</label>
+        <input id="contactInfo" type="email" />
+
+        <label for="startDate">Start Date:</label>
+        <input id="startDate" type="date">
+        <br/>
+
+        <label for="endDate">End Date:</label>
+        <input id="endDate" type="date">
+
+    </fieldset>
+    <input type="submit" value="Register as a Mentor" />
+</form>
