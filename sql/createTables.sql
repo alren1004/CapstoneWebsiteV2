@@ -32,7 +32,9 @@ CREATE TABLE mentors (
   profile_id           INT(25) NOT NULL,
   availability         VARCHAR(255),
   years_of_experiences INT(3),
-  concentration        VARCHAR(255),
+  fieldsSelect        VARCHAR(255),
+  startDate           DATE,
+  endDate             DATE,
   FOREIGN KEY (profile_id) REFERENCES profiles (profile_id)
 
 );
