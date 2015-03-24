@@ -1,89 +1,131 @@
 <!DOCTYPE html>
 <!-- Created by Timothy on 1/27/2015. -->
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
-    <style>
-    	h4 {
-    -moz-text-decoration-line: underline; /* Code for Firefox */
-    text-decoration-line: underline;
-    	}
-    </style>
-</head>
-<body>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+		<style>
+			h4 {
+				-moz-text-decoration-line: underline; /* Code for Firefox */
+				text-decoration-line: underline;
+			}
+			article img { float:right; margin-right:50px;}
+			article p { margin-right:50px;}
+			article {height:350px; border:2px solid darkblue; padding-left:20px; margin-bottom: 4px}
+		</style>
+	</head>
+	<body>
 
-<div class="wrapper">
+		<div class="wrapper">
 
-    <button id="create-user" style="float: right">Create new user</button>
-    <h1><a href="index.html"><img src="img/blue_logo.png" alt="logo" height="50" width="50"/></a></h1>
+			<button id="create-user" style="float: right">
+				Create new user
+			</button>
+			<h1><a href="index.html"><img src="img/blue_logo.png" alt="logo" height="50" width="50"/></a></h1>
 
-    <div id="dialog-form" title="Register">
-        <p class="validateTips">All form fields are required.</p>
-        <form>
-            <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" value="John Doe" required="true"
-                       class="text ui-widget-content ui-corner-all">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="john.doe@gallaudet.edu" required="true"
-                       class="text ui-widget-content ui-corner-all">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required="true"
-                       class="text ui-widget-content ui-corner-all">
+			<div id="dialog-form" title="Register">
+				<p class="validateTips">
+					All form fields are required.
+				</p>
+				<form>
+					<div>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" value="John Doe" required="true"
+						class="text ui-widget-content ui-corner-all">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" value="john.doe@gallaudet.edu" required="true"
+						class="text ui-widget-content ui-corner-all">
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" required="true"
+						class="text ui-widget-content ui-corner-all">
 
-            </div>
+					</div>
 
-            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-        </form>
-    </div>
+					<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+				</form>
+			</div>
 
-    <nav class="header">
-        <ul class="headerNav">
-            <li><a href="index.html" class="sixth before after">Home</a></li>
-            <li><a href="profile.html" class="sixth before after">Profile</a></li>
-            <li><a href="mentorship.html" class="sixth before after">Mentorships</a></li>
-            <li><a href="q_and_a.html" class="sixth before after">Q & A</a></li>
-            <li><a href="forum.html" class="sixth before after">Forum</a></li>
-        </ul>
-    </nav>
+			<nav class="header">
+				<ul class="headerNav">
+					<li>
+						<a href="index.html" class="sixth before after">Home</a>
+					</li>
+					<li>
+						<a href="profile.html" class="sixth before after">Profile</a>
+					</li>
+					<li>
+						<a href="mentorship.html" class="sixth before after">Mentorships</a>
+					</li>
+					<li>
+						<a href="q_and_a.html" class="sixth before after">Q & A</a>
+					</li>
+					<li>
+						<a href="forum.html" class="sixth before after">Forum</a>
+					</li>
+				</ul>
+			</nav>
 
-    <div class="container">
-		<h4>About Us</h4>
-		<h4>About the project</h4>
-		
-		<br>
-		
-		<h4>Timothy Yu</h4>
-		<h4>He is an information technology specialist.</h4>
-		
-		<br>
-		
-		<h4>Daniel Heidemeyer</h4>
-		<h4>He is from Germany</h4>
+			<div class="container">
+               <article>
+				<h2 id="the-team">The Team</h2>
+				
+				<h3 id="Timothy Yu">Timothy Yu (Technology Specialist)</h3>
+				<img src="img/Timothy.jpg" alt="Timothy Yu" width="133.6" height="216">
+				
+				<p>
+					<strong>Timothy Yu</strong> (@Timothy) is the information specialist of Gallaudet University. He is a senior student.
+					 He spent two months at Google working on products like Google. He graduated from Gallaudet University with a BS in Computer 
+					 Science.</p>
+					 <br><br><br>
+				</article>
+				
+				<article>
+					
+				<h3 id="Sung An">Sung An (Information Technology)</h3>
+				<img src="img/Sung.jpg" alt="Sung" width="179" height="240">
+				<p>
+					<strong>Sung An</strong> (@Sungho) is the information technology of Gallaudet University. He is a senior student and comes from South Korea. He spent two years at Samsung working on products like Galaxy. He graduated from Gallaudet University with a BS in Computer Science.</p>
+				</article>
 
-		<br>
-		
-		<h4>Sung Ho</h4>
-		<h4>He is from South Korea</h4>
 
-    </div>
+				<article>
+					
+				<h3 id="Daniel Heidemeyer">Daniel Heidemeyer (Technology Technology)</h3>
+				<img src="img/Daniel.jpg" alt="Daniel Heidemeyer" width="180" height="240">
+				<p>
+					<strong>Daniel Heidemeyer</strong> (@Heidemeyer) is the information technology of Gallaudet University. He is a senior student and comes from Germany. He spent four months at Congress working on products like database. He graduated from Gallaudet University with a BS in Computer Science.</p>
+				</article>
+			</div>
 
-    <footer class="footer" style="clear: both">
-        <ul class="footerNav">
-            <li><a href="#">ITS 492</a></li>
-        </ul>
-    </footer>
-</div>
+			<footer class="footer" style="clear: both">
+				<ul class="footerNav">
+					<li>
+						<a href="#">ITS 492</a>
+					</li>
+					<li>
+						<a href="/about/us/">About us</a>
+					</li>
+					<li>
+						<a href="/about/jobs/">Jobs</a>
+					</li>
+					<li>
+						<a href="/about/legal/privacy/">Privacy</a>
+					</li>
+					<li>
+						<a href="/about/legal/terms/">Terms</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-<script src="js/dialogForm.js"></script>
-</body>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+		<script src="js/dialogForm.js"></script>
+	</body>
 </html>
