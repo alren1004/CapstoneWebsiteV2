@@ -39,7 +39,7 @@
                 $row = mysql_fetch_array($check_login);
                 $user_id = $row['user_id'];
 
-                $get_profile_id = mysql_query("SELECT profile_id FROM profiles WHERE user_id = '" . $user_id . "''");
+                $get_profile_id = mysql_query("SELECT profile_id FROM profiles WHERE user_id = '" . $user_id . "'");
                 $profile_row = mysql_fetch_array($get_profile_id);
 
                 $_SESSION['Username'] = $username;
