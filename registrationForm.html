@@ -3,43 +3,61 @@
 <p>Please enter your details below to register.</p>
 
 <form method="post" action="registration.php" name="registerform" id="registerform">
+    <div class="formField">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required=""/>
+    </div>
+    <div class="formField">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required=""/>
+    </div>
 
+    <fieldset style="margin: 10px;">
+        <legend>Create Your Profile</legend>
+        <div class="formField">
+            <label for="first_name">First name:</label>
+            <input type="text" name="first_name" id="first_name" required="" />
+        </div>
+        <div class="formField">
+            <label for="last_name">Last name:</label>
+            <input type="text" name="first_name" id="last_name" required="" />
+        </div>
+        <div class="formField">
+            <label for="background">Background: </label>
+            <textarea id="background" name="background" form="registerForm" rows="7"></textarea>
+        </div>
+        <div class="formField">
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" form="registerForm" rows="7"></textarea>
+        </div>
+        <div class="formField">
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" form="registerForm" rows="7"></textarea>
+        </div>
 
-
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" required=""/>
-    <br/>
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" required=""/>
-    <br/>
-
-    <fieldset>
-        <label for="first_name">First name:</label>
-        <input type="text" name="first_name" id="first_name" required="" />
-        <br/>
-        <label for="last_name">Last name:</label>
-        <input type="text" name="first_name" id="last_name" required="" />
     </fieldset>
 
-    <p>For easier verification, you may provide your Gallaudet email address, otherwise please wait for a verification email.</p>
-    <label for="email">Email Address:</label>
-    <input type="text" name="email" id="email" required=""/>
-    <br/>
-    <br/>
+    <p>You may provide your Gallaudet email address to prove you are affliated with Gallaudet University.</p>
 
-    <label>
-        Pick a role:
-        <input id="roleSelect" list="roles" name="Roles" />
-    </label>
+    <div class="formField">
+        <label for="email">Email Address:</label>
+        <input type="text" name="email" id="email" placeholder="john.doe@gallaudet.edu" required=""/>
+    </div>
 
-    <datalist id="roles">
-        <option>Mentor</option>
-        <option>Alumni</option>
-        <option>Undergraduate</option>
-        <option>Graduate</option>
-    </datalist>
+    <p>You can choose to change your role later after registration.</p>
+    <div class="formField">
+        <label for="role">Pick a role:</label>
+        <input id="role" list="roles" name="Roles" value="Undergraduate" />
 
-    <br/>
+        <datalist id="roles">
+            <option>Mentor</option>
+            <option>Alumni</option>
+            <option>Undergraduate</option>
+            <option>Graduate</option>
+        </datalist>
+    </div>
 
-    <input type="submit" name="register" id="register" value="Register"/>
+    <div style="text-align: center; margin: 10px">
+        <input type="submit" name="register" id="register" value="Register"/>
+    </div>
 </form>

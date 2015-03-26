@@ -1,0 +1,14 @@
+.formField * {
+    vertical-align: top;
+    margin: 5px;
+}
+
+.formField textarea {
+    vertical-align: top;
+    margin: 5px;
+    width: 500px;
+}
+
+input {
+    width: 200px;
+}
