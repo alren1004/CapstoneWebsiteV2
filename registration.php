@@ -36,13 +36,26 @@
                 echo "<p>Sorry, that username is taken. Please try again.</p>";
                 include "registrationForm.html";
             } else {
-                $register_query = mysql_query("INSERT INTO users (user_name, password, user_email, is_verified, is_alumni) VALUES('" . $username . "', '" . $password . "', '" . $email . "', false, true)");
-                $get_user_id = mysql_query("");
+                $register_query = mysql_query("INSERT INTO users (user_name, password, user_email, is_verified, is_alumni) VALUES('"
+                    . $username . "', '" . $password . "', '" . $email . "', false, true)"
+                );
                 if ($register_query) {
-                    $profile_query = mysql_query("INSERT INTO profiles (first_name, last_name, background, education, skills, role) VALUES('" . $first_name . "', '" . $last_name . "', '" . $background . "', '" . $education . "', '" . $skills . "', '" . $role . "'");
-                    if ($profile_query) {
-                        echo "<h1>Success</h1>";
-                        echo "<p>Your account was successfully created. You may now login.</p>";
+                    $get_user_id = mysql_query("SELECT user_id FROM users WHERE user_name = '" . $username . "'");
+                    if($get_user_id) {
+                        $profile_insert_query = mysql_query("INSERT INTO profiles (first_name, last_name, background, education, skills, role, user_id) VALUES('"
+                            . $first_name . "', '" . $last_name . "', '" . $background . "', '" . $education . "', '" . $skills . "', '" . $role .
+                            "', '" . mysql_result($get_user_id, 0, "user_id") . "')"
+                        );
+                        if ($profile_insert_query) {
+                            echo "<h1>Success</h1>";
+                            echo "<p>Your account was successfully created. You may now login.</p>";
+                        } else {
+                            echo "<h1>Error inserting into profiles</h1>";
+                            echo "<p>Sorry, your registration failed. Please try again.</p>";
+                        }
+                    } else {
+                        echo "<h1>Error getting user_id</h1>";
+                        echo "<p>Sorry, your registration failed. Please try again.</p>";
                     }
                 } else {
                     echo "<h1>Error</h1>";

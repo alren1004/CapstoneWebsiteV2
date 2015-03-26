@@ -28,10 +28,10 @@
         <?php
         if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
             // Logged in.
-            include "directoryRegistration.html";
+            include "mentorRegistrationForm.html";
         } else {
             // Not logged in.
-            include "directoryRegistration.html";
+            include "mentorRegistrationForm.html";
         }
         ?>
 

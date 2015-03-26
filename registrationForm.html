@@ -2,25 +2,25 @@
 
 <p>Please enter your details below to register.</p>
 
-<form method="post" action="registration.php" name="registerform" id="registerform">
+<form method="post" action="registration.php" name="registerForm" id="registerForm">
     <div class="formField">
-        <label for="username">Username:</label>
+        <label for="username">Username*:</label>
         <input type="text" name="username" id="username" required=""/>
     </div>
     <div class="formField">
-        <label for="password">Password:</label>
+        <label for="password">Password*:</label>
         <input type="password" name="password" id="password" required=""/>
     </div>
 
     <fieldset style="margin: 10px;">
         <legend>Create Your Profile</legend>
         <div class="formField">
-            <label for="first_name">First name:</label>
+            <label for="first_name">First name*:</label>
             <input type="text" name="first_name" id="first_name" required="" />
         </div>
         <div class="formField">
-            <label for="last_name">Last name:</label>
-            <input type="text" name="first_name" id="last_name" required="" />
+            <label for="last_name">Last name*:</label>
+            <input type="text" name="last_name" id="last_name" required="" />
         </div>
         <div class="formField">
             <label for="background">Background: </label>
@@ -40,14 +40,14 @@
     <p>You may provide your Gallaudet email address to prove you are affliated with Gallaudet University.</p>
 
     <div class="formField">
-        <label for="email">Email Address:</label>
+        <label for="email">Email Address*:</label>
         <input type="text" name="email" id="email" placeholder="john.doe@gallaudet.edu" required=""/>
     </div>
 
     <p>You can choose to change your role later after registration.</p>
     <div class="formField">
-        <label for="role">Pick a role:</label>
-        <input id="role" list="roles" name="Roles" value="Undergraduate" />
+        <label for="role">Pick a role*:</label>
+        <input id="role" list="roles" name="role" value="Undergraduate" />
 
         <datalist id="roles">
             <option>Mentor</option>
@@ -60,4 +60,6 @@
     <div style="text-align: center; margin: 10px">
         <input type="submit" name="register" id="register" value="Register"/>
     </div>
+
+    <p><i>* Required</i></p>
 </form>
