@@ -20,11 +20,10 @@ CREATE TABLE profiles (
   background VARCHAR(255),
   education  VARCHAR(255),
   skills     VARCHAR(255),
-  role      VARCHAR (50)  NOT NULL
+  role       VARCHAR(50)  NOT NULL,
   user_email VARCHAR(255) NOT NULL,
   user_id    INT(25)      NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES users (user_id),
-  FOREIGN KEY (user_email) REFERENCES users (user_email)
+  FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
 CREATE TABLE mentors (
