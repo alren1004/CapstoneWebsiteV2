@@ -37,10 +37,13 @@
             $check_login = mysql_query("SELECT * FROM users WHERE user_name = '" . $username . "' AND password = '" . $password . "'");
             if (mysql_num_rows($check_login) == 1) {
                 $row = mysql_fetch_array($check_login);
-                $email = $row['user_email'];
+                $user_id = $row['user_id'];
+
+                $get_profile_id = mysql_query("SELECT profile_id FROM profiles WHERE user_id = '" . $user_id . "''");
+                $profile_row = mysql_fetch_array($get_profile_id);
 
                 $_SESSION['Username'] = $username;
-                $_SESSION['EmailAddress'] = $email;
+                $_SESSION['profile_id'] = $profile_row['profile_id'];
                 $_SESSION['LoggedIn'] = 1;
 
                 echo "<h1>Successful login!</h1>";
