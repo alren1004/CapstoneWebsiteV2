@@ -28,10 +28,21 @@
         <?php
         if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
             // Logged in.
-            include "mentorRegistrationForm.html";
+        $get_role = mysql_query("SELECT * FROM profiles WHERE profile_id = " . $_SESSION['profile_id'] . "");
+
+
+        if ($get_role) {
+            $role = mysql_fetch_array($get_role)['role'];
+            if(strcasecmp($role, "Mentor") == 0){
+                include "mentorRegistrationForm.html";
+            } else {
+                echo $role;
+            }
+        }
+
         } else {
             // Not logged in.
-            include "mentorRegistrationForm.html";
+            echo "No registration";
         }
         ?>
 
