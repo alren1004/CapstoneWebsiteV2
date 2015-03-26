@@ -21,7 +21,6 @@ CREATE TABLE profiles (
   education  VARCHAR(255),
   skills     VARCHAR(255),
   role       VARCHAR(50)  NOT NULL,
-  user_email VARCHAR(255) NOT NULL,
   user_id    INT(25)      NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
