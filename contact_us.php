@@ -8,19 +8,31 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
     <style>
+
         textarea {
             height: 10em;
-            width: 25em;
             clear: both;
-            margin-left: 50px;
-            margin-top: 13px;
-
-
         }
-        comment {
 
+        label {
+            float: left;
+            width: 5em;
             text-align: right;
         }
+
+        input, textarea {
+            width: 400px;
+            margin-left:0.8em;
+            margin-bottom:0.8em;
+        }
+
+        textarea, input:required, input[required] input:invalid {
+            border: 2px solid darkblue;
+        }
+
+        textarea {height:15em;}
+        span>input {margin-left:12em;}
+
     </style>
 </head>
 <body>
@@ -41,23 +53,20 @@
     <div class="container">
         <form>
             <fieldset>
-                    <legend> Contact Information</legend>
-
-                <label for="from">From:</label>
-                <input type="text" name="from" id="from"  required="true"
-                       class="text ui-widget-content ui-corner-all"><br>
-
-
+                <legend><h3>Contact Information</h3></legend>
+                <label for="name">Name:</label>
+                    <input type="text" name="name" required><br>
+                <label for="email">Email:</label>
+                    <input type="email" name="email" autofocus required><br>
                 <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject"  required="true"
-                       class="text ui-widget-content ui-corner-all"><br>
+                    <input type="subject" name="subject" required><br>
+                <label for="comment">Comment:</label>
+                    <textarea name="comments" placeholder="Please type here if you have any comment."></textarea><br>
 
-                <label for="Comment">Comment:</label>
-                <textarea rows="4" cols="50" name="Comment" placeholder="Please type here if you have any comment." ></textarea>
-
-            <input type="submit" value="Submit" tabindex="-1" style="position:absolute; top:-1000px">
-
-            </fieldset>
+                <fieldset>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset"><br>
+                </fieldset>
         </form>
 
 
