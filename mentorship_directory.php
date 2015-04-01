@@ -36,7 +36,7 @@
             if(strcasecmp($role, "Mentor") == 0){
                 include "mentorRegistrationForm.html";
             } else {
-                echo $role;
+                echo "You are not a mentor.";
             }
         }
 

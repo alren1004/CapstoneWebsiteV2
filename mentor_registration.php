@@ -38,11 +38,11 @@
 
             $mentors_insert_query = "INSERT INTO mentors (availability, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES( '$available' , '$yearOfExperience' , '$fieldsSelect' , '$startDate' , '$endDate' , '$profile_id')";
 
-            //$mentors_insert_query = mysql_query(
-               // "INSERT INTO mentors (availability, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES('"
-                //. $available . "', '" . $yearOfExperience  . "', '" . $fieldsSelect . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $startDate))) . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $endDate))) . "', '"
-                //. $profile_id . "')"
-            //);
+            /*$mentors_insert_query = mysql_query(
+                "INSERT INTO mentors (availability, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES('"
+                . $available . "', '" . $yearOfExperience  . "', '" . $fieldsSelect . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $startDate))) . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $endDate))) . "', '"
+                . $profile_id . "')"
+            );*/
 
             if ($mentors_insert_query) {
                 echo "<h1>Success</h1>";
