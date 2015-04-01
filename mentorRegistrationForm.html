@@ -1,43 +1,46 @@
-<form id="mentorRegistration">
+<!DOCTYPE html>
+        <html>
+            <body>
+                <form id="mentorRegistration" action="mentor_registration.php" method="post">
 
-    <fieldset>
-        <legend>Are you applying to be?</legend>
-        <input type="checkbox" name="mentor" value="Mentor" />Mentor <br />
-        <input type="checkbox" name="alumni" value="Alumni" />Alumni<br />
-        <input type="checkbox" name="undergraduate" value="Undergraduate" />Undergraduate<br />
-        <input type="checkbox" name="graduate" value="Graduate"/>Graduate<br/>
 
-        <label for="availability">Availability:</label>
-        <input id="availability" placeholder="Enter here" name="Availability">
-        <br/>
+                        <!--<legend>Are you applying to be?</legend>
+                            <input type="checkbox" name="mentor" value="Mentor" />Mentor <br />
+                            <input type="checkbox" name="alumni" value="Alumni" />Alumni<br />
+                            <input type="checkbox" name="undergraduate" value="Undergraduate" />Undergraduate<br />
+                            <input type="checkbox" name="graduate" value="Graduate"/>Graduate<br/>
+                        -->
+                        <fieldset>
+                            <label>Availability:</label>
+                            <input id="availability" name="Availability" placeholder="Please enter here">
+                            <br/>
 
-        <label for="year_of_experience">Year of Experience:</label>
-        <input id="year_of_experience" placeholder="1 year" name="Year_Of_Experince">
-        <br/>
+                            <label for="year_of_experience">Year of Experience:</label>
+                            <input id="year_of_experience" placeholder="1 year" name="Year_Of_Experience">
+                            <br/>
 
-        </label>
-        <label for="fieldsSelect">Choose a field to mentor in:</label>
-        <input id="fieldsSelect" list="fields" placeholder="Choose One" name="Fields" />
-        <datalist id="fields">
-            <option>Computer Science</option>
-            <option>Web Development</option>
-            <option>Database</option>
-            <option>Networking</option>
-            <option>Informatics</option>
-        </datalist>
-        <br/>
+                            </label>
+                            <label for="fieldsSelect">Choose a field to mentor in:</label>
+                            <input id="fieldsSelect" list="fields" placeholder="Choose One" name="fieldsSelect" />
+                            <datalist id="fields">
+                            <option>Computer Science</option>
+                            <option>Web Development</option>
+                            <option>Database</option>
+                            <option>Networking</option>
+                            <option>Informatics</option>
+                            </datalist>
+                            <br/>
 
-        <label for="contactInfo">Enter your email contact:</label>
-        <input id="contactInfo" type="email" />
-        <br/>
+                            <label for="startDate">Start Date:</label>
+                            <input id="startDate" type="date" name="startDate">
 
-        <label for="startDate">Start Date:</label>
-        <input id="startDate" type="date">
+                            <label for="endDate">End Date:</label>
+                            <input id="endDate" type="date" name="endDate">
+                            <br/>
+                        </fieldset>
 
-        <label for="endDate">End Date:</label>
-        <input id="endDate" type="date">
-        <br/>
+                            <input type="submit" value="Register as a Mentor" />
 
-    </fieldset>
-    <input type="submit" value="Register as a Mentor" />
-</form>
+                </form>
+            </body>
+        </html>
