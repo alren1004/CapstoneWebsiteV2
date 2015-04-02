@@ -14,25 +14,25 @@ CREATE TABLE users (
 );
 
 CREATE TABLE profiles (
-  profile_id INT(25)      NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  first_name VARCHAR(70)  NOT NULL,
-  last_name  VARCHAR(70)  NOT NULL,
+  profile_id INT(25)     NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(70) NOT NULL,
+  last_name  VARCHAR(70) NOT NULL,
   background VARCHAR(255),
   education  VARCHAR(255),
   skills     VARCHAR(255),
-  role       VARCHAR(50)  NOT NULL,
-  user_id    INT(25)      NOT NULL,
+  role       VARCHAR(50) NOT NULL,
+  user_id    INT(25)     NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
 CREATE TABLE mentors (
   mentor_id            INT(25) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   profile_id           INT(25) NOT NULL,
-  mentorship_dec        VARCHAR(255),
+  mentorship_desc      VARCHAR(255),
   years_of_experiences INT(3),
-  fieldsSelect        VARCHAR(255),
-  startDate           DATE,
-  endDate             DATE,
+  fieldsSelect         VARCHAR(255),
+  startDate            DATE,
+  endDate              DATE,
   FOREIGN KEY (profile_id) REFERENCES profiles (profile_id)
 
 );

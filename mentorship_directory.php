@@ -45,7 +45,7 @@
                                 <tr>
                                     <th>Number:</th>
                                     <th>Profile:</th>
-                                    <th>Availability:</th>
+                                    <th>Description:</th>
                                     <th>Years:</th>
                                     <th>Field:</th>
                                     <th>Start Date:</th>

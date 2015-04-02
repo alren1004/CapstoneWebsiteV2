@@ -27,18 +27,18 @@
 
     <div class="container">
         <?php
-        if (!empty($_POST['MentorshipDec'])) {
+        if (!empty($_POST['MentorshipDesc'])) {
 
             $profile_id = $_SESSION['profile_id'];
-            $mentorship_dec = mysql_real_escape_string($_POST['MentorshipDec']);
+            $mentorship_desc = mysql_real_escape_string($_POST['MentorshipDesc']);
             $yearOfExperience = mysql_real_escape_string($_POST['Year_Of_Experience']);
             $fieldsSelect = mysql_real_escape_string($_POST['fieldsSelect']);
             $startDate = mysql_real_escape_string($_POST['startDate']);
             $endDate = mysql_real_escape_string($_POST['endDate']);
 
             $mentors_insert_query = mysql_query(
-                "INSERT INTO mentors (mentorship_dec, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES('"
-                . $mentorship_dec . "', '" . $yearOfExperience  . "', '" . $fieldsSelect . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $startDate))) . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $endDate))) . "', '"
+                "INSERT INTO mentors (mentorship_desc, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES('"
+                . $mentorship_desc . "', '" . $yearOfExperience  . "', '" . $fieldsSelect . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $startDate))) . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $endDate))) . "', '"
                 . $profile_id . "')"
             );
 
