@@ -26,12 +26,21 @@
             margin-bottom:0.8em;
         }
 
+
+
         textarea, input:required, input[required] input:invalid {
             border: 2px solid darkblue;
         }
 
         textarea {height:15em;}
-        span>input {margin-left:12em;}
+        #submit, #reset {margin-left:12em; width:100px; height:3em;
+        }
+
+        #submit:hover {font-weight: bold; background-color: #bbbbbb;
+        }
+
+        #reset:hover {font-weight: bold; background-color: #bbbbbb;
+        }
 
     </style>
 </head>
@@ -55,17 +64,18 @@
             <fieldset>
                 <legend><h3>Contact Information</h3></legend>
                 <label for="name">Name:</label>
-                    <input type="text" name="name" required><br>
+                    <input type="text" name="name" autofocus required><br>
                 <label for="email">Email:</label>
-                    <input type="email" name="email" autofocus required><br>
+                    <input type="email" name="email" required><br>
                 <label for="subject">Subject:</label>
                     <input type="subject" name="subject" required><br>
                 <label for="comment">Comment:</label>
                     <textarea name="comments" placeholder="Please type here if you have any comment."></textarea><br>
+            </fieldset>
 
                 <fieldset>
-                    <input type="submit" name="submit" value="Submit">
-                    <input type="reset" name="reset" value="Reset"><br>
+                    <input type="submit" name="submit"  id ="submit" value="Submit">
+                    <input type="reset" name="reset" id = "reset" value="Reset"><br>
                 </fieldset>
         </form>
 
