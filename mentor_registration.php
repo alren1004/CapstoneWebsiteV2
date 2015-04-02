@@ -27,22 +27,20 @@
 
     <div class="container">
         <?php
-        if (!empty($_POST['Availability'])) {
+        if (!empty($_POST['MentorshipDec'])) {
 
             $profile_id = $_SESSION['profile_id'];
-            $available = mysql_real_escape_string($_POST['Availability']);
+            $mentorship_dec = mysql_real_escape_string($_POST['MentorshipDec']);
             $yearOfExperience = mysql_real_escape_string($_POST['Year_Of_Experience']);
             $fieldsSelect = mysql_real_escape_string($_POST['fieldsSelect']);
             $startDate = mysql_real_escape_string($_POST['startDate']);
             $endDate = mysql_real_escape_string($_POST['endDate']);
 
-            $mentors_insert_query = "INSERT INTO mentors (availability, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES( '$available' , '$yearOfExperience' , '$fieldsSelect' , '$startDate' , '$endDate' , '$profile_id')";
-
-            /*$mentors_insert_query = mysql_query(
-                "INSERT INTO mentors (availability, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES('"
-                . $available . "', '" . $yearOfExperience  . "', '" . $fieldsSelect . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $startDate))) . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $endDate))) . "', '"
+            $mentors_insert_query = mysql_query(
+                "INSERT INTO mentors (mentorship_dec, years_of_experiences, fieldsSelect, startDate, endDate, profile_id) VALUES('"
+                . $mentorship_dec . "', '" . $yearOfExperience  . "', '" . $fieldsSelect . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $startDate))) . "', '" . date('Y-m-d', strtotime(str_replace('-', '/', $endDate))) . "', '"
                 . $profile_id . "')"
-            );*/
+            );
 
             if ($mentors_insert_query) {
                 echo "<h1>Success</h1>";

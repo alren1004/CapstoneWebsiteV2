@@ -28,7 +28,7 @@ CREATE TABLE profiles (
 CREATE TABLE mentors (
   mentor_id            INT(25) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   profile_id           INT(25) NOT NULL,
-  availability         VARCHAR(255),
+  mentorship_dec        VARCHAR(255),
   years_of_experiences INT(3),
   fieldsSelect        VARCHAR(255),
   startDate           DATE,
