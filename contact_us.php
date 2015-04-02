@@ -60,7 +60,7 @@
     ?>
 
     <div class="container">
-        <form>
+        <form action="MAILTO: sung.an@gallaudet.edu, timothy.yu@gallaudet.edu, daniel.heidemeyer@gallaudet.edu" method="post" enctype="text/plain">
             <fieldset>
                 <legend><h3>Contact Information</h3></legend>
                 <label for="name">Name:</label>
