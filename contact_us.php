@@ -60,27 +60,45 @@
     ?>
 
     <div class="container">
-        <form action="MAILTO: sung.an@gallaudet.edu, timothy.yu@gallaudet.edu, daniel.heidemeyer@gallaudet.edu" method="post" enctype="text/plain">
-            <fieldset>
-                <legend><h3>Contact Information</h3></legend>
-                <label for="name">Name:</label>
-                    <input type="text" name="name" autofocus required><br>
-                <label for="email">Email:</label>
-                    <input type="email" name="email" required><br>
-                <label for="subject">Subject:</label>
-                    <input type="subject" name="subject" required><br>
-                <label for="comment">Comment:</label>
-                    <textarea name="comments" placeholder="Please type here if you have any comment."></textarea><br>
-            </fieldset>
+    <?php
 
-                <fieldset>
-                    <input type="submit" name="submit"  id ="submit" value="Submit">
-                    <input type="reset" name="reset" id = "reset" value="Reset"><br>
-                </fieldset>
-        </form>
+        if(!empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['comments'])){
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $subject = $_POST['subject'];
+            $comments = $_POST['comments'];
+            $headers = "From: " . $email . "\r\n" . "Cc: daniel.heidemeyer@gallaudet.edu, sung.an@gallaudet.edu\r\n";
+            if(mail("timothy.yu@gallaudet.edu", $subject, $comments, $headers)){
+                echo "<p>Email sent!</p>";
+            } else {
+                echo "<p>Email not sent.</p>";
+            }
+        } else {
+            ?>
 
+                <form action="contact_us.php" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend><h3>Contact Information</h3></legend>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="name" autofocus required><br>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" required><br>
+                        <label for="subject">Subject:</label>
+                        <input id="subject" type="subject" name="subject" required><br>
+                        <label for="comments">Comment:</label>
+                        <textarea id="comments" name="comments"
+                                  placeholder="Please type here if you have any comment."></textarea><br>
+                    </fieldset>
 
-    </div>
+                    <fieldset>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                        <input type="reset" name="reset" id="reset" value="Reset"><br>
+                    </fieldset>
+                </form>
+        <?php
+        }
+    ?>
+                </div>
 
     <?php include "footer.html"; ?>
 </div>
