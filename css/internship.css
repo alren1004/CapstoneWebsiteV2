@@ -1,0 +1,17 @@
+.radioDisplay {
+    display: inline-block;
+    text-align: right;
+}
+
+input[type="radio"]{
+    float: left;
+    margin-left: 100px;
+
+}
+
+label {
+    margin: 5px;
+}
+input {
+    margin: 5px;
+}
