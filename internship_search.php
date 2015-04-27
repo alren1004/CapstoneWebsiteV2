@@ -25,77 +25,57 @@
     ?>
 
     <div class="container">
-        <h1><i>Start Your</i> Internship Search</h1>
 
-        <h3>Search Internships</h3>
-
-        <form action="/search/posts" method="get">
-
-            <label for="ListingType"></label>
-            <br/>
-
-            <label for="ListingType_None">All Opportunities</label>
-            <input type="radio" name="ListingType" id="ListingType_None" value="None">
-            <br/>
-
-            <label for="ListingType_internship">Internships</label>
-            <input type="radio" name="ListingType" id="ListingType_Internship" value="Internship" checked=&quot;checked&quot;>
-            <br/>
-
-            <label class="radioDisplay" for="ListingType_EntryLevelJob">Entry Level Jobs</label>
-            <input type="radio" name="ListingType" id="ListingType_EntryLevelJob" value="EntryLevelJob">
-            <br/>
-
-            <label for="ListingType_StudentJob">Student Jobs</label>
-            <input type="radio" name="ListingType" id="ListingType_StudentJob" value="StudentJob">
-            <br/>
-            <br/>
-
-            <label for="ListingType_Keywords(Major)">Keyword(Major)</label>
-            <input id="Keywords" name="Keywords" placeholder="Marketing, Design,..." type="text" value=""/>
-            <br/>
-
-            <label>Location</label>
-            <input id="Location" name="Location" placeholder="City, State or Zip Code" type="text" value=""/>
-            <br/>
-
-            <label for="Company">Company</label>
-            <input id="Company" name="Company" placeholder="Microsoft, Disney" type="text" value=""/>
-            <br/>
-            <br/>
-
-            <label for="Sector">Employer Type</label>
-            <select data-val="true" data-val-required="The Employer Type field is required." id="Sector" name="Sector">
-                <option selected="selected" value="None">All</option>
-                <option value="Profit">Profit</option>
-                <option value="Nonprofit">Non-Profit</option>
-                <option value="Government">Government</option>
-            </select>
-            <br/>
-            <label for="Compensation">Compensation</label>
-            <select data-val="true"
-                    data-val-required="The Compensation field is required."
-                    id="Compensation" name="Compensation">
-                <option selected="selected" value="All">All</option>
-                <option value="Paid">Paid</option>
-                <option value="Unpaid">Unpaid</option>
-            </select>
-            <br/>
-            <label for="Employment">Full/Part Time</label>
-
-            <select data-val="true"
-                    data-val-required="The Full/Part Time field is required."
-                    id="Employment" name="Employment">
-                <option selected="selected" value="All">All</option>
-                <option value="FullTime">Full-Time</option>
-                <option value="PartTime">Part-Time</option>
-            </select>
-            <br/>
-            <br/>
-            <input id="FilterBy" name="FilterBy" type="hidden" value="{}"/>
-            <input type="hidden" name="Page" id="Page" value="1"/>
-            <button type="submit">Search</button>
         </form>
+
+        <h1><i>Internship Search</i></h1>
+            <form action="internship_search.php" method="POST">
+                <table border="0" cellspacing="0" cellpadding="6" style="padding:25px; border:1px dotted #ccc; ">
+                    <tr>
+                        <td><label>Location</label></td>
+                        <td><input name="Location" placeholder="City, State or Zip Code" type="text" size="25" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Company</label></td>
+                        <td><input type="Company" placeholder="Microsoft, IBM, Google" size="25" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Sector">Employer Type</label></td>
+                        <td><select data-val="true" data-val-required="The Employer Type field is required." id="Sector" name="Sector">
+                            <option selected="selected" value="None">All</option>
+                            <option value="Profit">Profit</option>
+                            <option value="Nonprofit">Non-Profit</option>
+                            <option value="Government">Government</option>
+                        </td></select>
+                    </tr>
+                    <tr>
+                        <td><label>Compensation</label></td>
+                        <td><select data-val="true" data-val-required="The Compensation field is required." id="Compensation" name="Compensation">
+                            <option selected="selected" value="All">All</option>
+                            <option value="Paid">Paid</option>
+                            <option value="Unpaid">Unpaid</option>
+                        </td></select>
+                    </tr>
+                    <tr>
+                        <td><label for="Employment">Full/Part Time</label>
+                        <td><select data-val="true" data-val-required="The Full/Part Time field is required." id="Employment" name="Employment">
+                            <option selected="selected" value="All">All</option>
+                            <option value="FullTime">Full-Time</option>
+                            <option value="PartTime">Part-Time</option>
+                        </td></select>
+                    </tr>
+                    <tr>
+                        <td><label>Submit</label></td>
+                        <td><input type="submit" value="Now" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Reset</label></td>
+                        <td><input type="reset" value="Reset" /></td>
+                    </tr>
+                </table>
+            </form>
+
+
     </div>
 </div>
 <script type="text/javascript">
