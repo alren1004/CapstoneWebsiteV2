@@ -66,11 +66,11 @@
                     </tr>
                     <tr>
                         <td><label>Submit</label></td>
-                        <td><input type="submit" value="Now" /></td>
+                        <td><input type="submit" value="Click" /></td>
                     </tr>
                     <tr>
                         <td><label>Reset</label></td>
-                        <td><input type="reset" value="Reset" /></td>
+                        <td><input type="reset" value="Click" /></td>
                     </tr>
                 </table>
             </form>
@@ -78,6 +78,51 @@
 
     </div>
 </div>
+
+
+
+
+
+<div class="css-slideshow">
+	<figure>
+		<img src="img/internsearch.png" alt="Fans" width="500" height="300" class="Fans"> 
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch1.png" alt="Fans1" width="500" height="300" class="Fans1"> 
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch2.jpg" alt="Fans2" width="500" height="300" class="Fans2">
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch3.jpg" alt="Fans3" width="500" height="300" class="Fans3"> 
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch5.jpg" alt="Fans5" width="500" height="300" class="Fans5">
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch6.png" alt="Fans6" width="500" height="300" class="Fans6">
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch7.jpg" alt="Fans7" width="500" height="300" class="Fans7">
+	</figure>
+	
+	<figure>
+		<img src="img/internsearch8.jpg" alt="Fans8" width="500" height="300" class="Fans8">
+	</figure>
+</div>  		
+
+
+
+
+
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         var $frm = $('.search-form form');
@@ -110,5 +155,10 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/dialogForm.js"></script>
+
+
+
+
+
 </body>
 </html>
