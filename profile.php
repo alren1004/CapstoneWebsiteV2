@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/form.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css" />
 </head>
 <body>
 
 <div class="wrapper">
 
     <?php
-    if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) {
+    if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
         // Logged in.
         include "logoutButton.html";
     } else {
@@ -65,13 +66,36 @@
             include "profileForm.php";
             echo "<input type='submit' id='edit' name='edit' value='Edit' />";
         } else {
-            // Not logged in.
-            echo "<p>Not logged in.</p>";
+
+            echo"<centre><h3>Member Login</h3></centre>
+                    <form action='landing_page.php' name='loginForm' id='loginForm' method='POST'>
+                    <table border='0' cellspacing='0' cellpadding='4'  style='padding:0px; border:1px  #ccc; '>
+                        <tr>
+                            <td><label for='username'>Username:</label></td>
+                            <td><input name='username' type='text' id='username' required='true' size='25' /></td>
+                        </tr>
+                        <tr>
+                            <td><label for='password'>Password:</label></td>
+                            <td><input name='password' type='password' id='password' required='true' size='25' /></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                          <td><label>Submit Button:</label></td>
+                          <td><input type='submit' value='Sign in' /></td>
+                        </tr>
+                    </table>
+                    </form>";
+            echo "<li><P>Please fill out on the page of registration if you have not registered. <a href=registration.php> Click here.</a></P></li>";
         }
         ?>
     </div>
 
     <?php include "footer.html"; ?>
+    <div class="copyRight">
+        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook" href="https://www.facebook.com/itBison">facebook</a>
+            <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
+    </div>
+
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>

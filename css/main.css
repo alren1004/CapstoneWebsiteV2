@@ -1,15 +1,31 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    
 }
+
+body {
+    background-color: #ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 
 .wrapper {
     min-height: 100%;
     position: relative;
-    width: 750px;
+    width: 1024px;
     margin: 0 auto;
+}
+
+.box {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.8;
 }
 
 .header {
@@ -19,6 +35,7 @@ html, body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#04519b), color-stop(60%, #044687), to(#033769));
     background-image: linear-gradient(#04519b, #044687 60%, #033769);
     background-repeat: no-repeat;
+
 }
 
 .footer {
@@ -31,11 +48,15 @@ html, body {
     border-bottom: 1px solid #178acc;
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .container {
     padding: 10px 10px 80px;
-    background-color: antiquewhite;
+    background-image: url(../img/simpleBU.jpg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 ul {
@@ -50,9 +71,9 @@ li {
 }
 
 .headerNav li {
-    padding: 10px;
+    padding: 15px;
     display: block;
-    width: 160px;
+    width: 210px;
     text-align: center;
 }
 
@@ -63,8 +84,8 @@ li {
     transition: 0.5s color ease;
     text-decoration: none;
     text-align: center;
-    color: #81b3d2;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .headerNav a:hover {
@@ -104,15 +125,22 @@ li {
     width: 100%;
 }
 
+.headerNav {
+    padding-left: 50px;
+}
+
 .footerNav a:link, .footerNav a:visited {
     display: block;
-    width: 120px;
+    width: 494px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
-    padding: 10px;
+    padding: 9px;
     text-decoration: none;
     text-transform: uppercase;
+
+
+
 
     background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
     background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
@@ -134,11 +162,16 @@ li {
     filter: none;
     border-bottom: 1px solid #022241;
 }
+.footerNav{
+    text-align: center;
+
+
+}
 
 label {
     display: inline-block;
     width: 150px;
-    text-align: right;
+    text-align: left;
 }
 
 #introduction p {
@@ -151,4 +184,34 @@ label {
     text-align: right;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 1.5em;
+    color: #333333;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+}
+h3 {
+    font-size: 23px;
+    line-height: 1.5em;
+    color: #555555;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+}
+p {
+    font-size: 17px;
+    line-height: 1.5em;
+    color:#777777;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.copyRight {
+    text-align: center;
+    font-size: 10px;
 }
