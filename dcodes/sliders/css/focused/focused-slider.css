@@ -1,2 +1,68 @@
 /* dCodes Framework:(c) TemplateAccess */
-#focus-slider{border:1px solid #ccc;height:380px;overflow:hidden;position:relative;width:100%}#focus-slider ul{height:380px;position:absolute}#focus-slider ul li{background:#000;float:left;height:380px;overflow:hidden;position:relative;width:980px}#focus-slider ul li div{overflow:hidden;position:absolute}#focus-slider .focus-btnBg{background:#000;border-radius:2px;bottom:0;height:40px;left:0;margin:8px;position:absolute;width:180px}#focus-slider .focus-btn{bottom:8px;height:24px;left:0;margin:8px;padding-left:10px;position:absolute;width:970px}#focus-slider .focus-btn span{_display:inline;_zoom:1;color:#fff;cursor:pointer;display:inline-block;font-size:16px;font-weight:bold;height:24px;line-height:24px;margin-right:6px;text-align:center;width:24px}#focus-slider .focus-btn span.on{background:#000;color:#fcc}
+#focus-slider {
+    border: 1px solid #ccc;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+#focus-slider ul {
+    height: 380px;
+    position: absolute
+}
+
+#focus-slider ul li {
+    background: #000;
+    float: left;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    width: 980px
+}
+
+#focus-slider ul li div {
+    overflow: hidden;
+    position: absolute
+}
+
+#focus-slider .focus-btnBg {
+    background: #000;
+    border-radius: 2px;
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    margin: 8px;
+    position: absolute;
+    width: 180px
+}
+
+#focus-slider .focus-btn {
+    bottom: 8px;
+    height: 24px;
+    left: 0;
+    margin: 8px;
+    padding-left: 10px;
+    position: absolute;
+    width: 970px
+}
+
+#focus-slider .focus-btn span {
+    _display: inline;
+    _zoom: 1;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 6px;
+    text-align: center;
+    width: 24px
+}
+
+#focus-slider .focus-btn span.on {
+    background: #000;
+    color: #fcc
+}

@@ -3,7 +3,7 @@
     text-align: right;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     float: left;
     margin-left: 100px;
 
@@ -12,6 +12,7 @@ input[type="radio"]{
 label {
     margin: 5px;
 }
+
 input {
     margin: 5px;
 }

@@ -1,3 +1,148 @@
 /* dCodes Framework:(c) TemplateAccess */
 
-ul.dc_list{list-style:none;margin:0;padding:6px 0}ul.dc_list li{background-image:url(../images/sprite_222222.png);background-position:-67px -558px;background-repeat:no-repeat;color:#222222;margin:0;padding:0 0 5px 22px}ul.dc_li_arrow li,ul li.dc_li_arrow{background-position:-303px -322px}ul.dc_li_comment li,ul li.dc_li_comment{background-position:-380px -242px}ul.dc_li_bullet li,ul li.dc_li_bullet{background-position:-66px -558px}ul.dc_li_minus li,ul li.dc_li_minus{background-position:-101px -520px}ul.dc_li_check li,ul li.dc_li_check{background-position:-461px -163px}ul.dc_li_plus li,ul li.dc_li_plus{background-position:-141px -480px}ul.dc_li_carrow li,ul li.dc_li_carrow{background-position:-619px -3px}ul.dc_li_star li,ul li.dc_li_star{background-position:-580px -44px}ul.dc_li_222222 li,ul li.dc_li_222222{background-image:url(../images/sprite_222222.png);color:#222222}ul.dc_li_092334 li,ul li.dc_li_092334{background-image:url(../images/sprite_092334.png);color:#092334}ul.dc_li_00437f li,ul li.dc_li_00437f{background-image:url(../images/sprite_00437f.png);color:#00437f}ul.dc_li_008899 li,ul li.dc_li_008899{background-image:url(../images/sprite_008899.png);color:#008899}ul.dc_li_3b424a li,ul li.dc_li_3b424a{background-image:url(../images/sprite_3b424a.png);color:#3b424a}ul.dc_li_625b56 li,ul li.dc_li_625b56{background-image:url(../images/sprite_625b56.png);color:#625b56}ul.dc_li_ab998f li,ul li.dc_li_ab998f{background-image:url(../images/sprite_ab998f.png);color:#ab998f}ul.dc_li_788794 li,ul li.dc_li_788794{background-image:url(../images/sprite_788794.png);color:#788794}ul.dc_li_717a75 li,ul li.dc_li_717a75{background-image:url(../images/sprite_717a75.png);color:#717a75}ul.dc_li_79745d li,ul li.dc_li_79745d{background-image:url(../images/sprite_79745d.png);color:#79745d}ul.dc_li_372e25 li,ul li.dc_li_372e25{background-image:url(../images/sprite_372e25.png);color:#372e25}ul.dc_li_6b3c02 li,ul li.dc_li_6b3c02{background-image:url(../images/sprite_6b3c02.png);color:#6b3c02}ul.dc_li_dddddd li,ul li.dc_li_dddddd{background-image:url(../images/sprite_dddddd.png);color:#dddddd}ul.dc_li_4b2c5a li,ul li.dc_li_4b2c5a{background-image:url(../images/sprite_4b2c5a.png);color:#4b2c5a}ul.dc_li_bc006e li,ul li.dc_li_bc006e{background-image:url(../images/sprite_bc006e.png);color:#bc006e}ul.dc_li_770000 li,ul li.dc_li_770000{background-image:url(../images/sprite_770000.png);color:#770000}ul.dc_li_e98813 li,ul li.dc_li_e98813{background-image:url(../images/sprite_e98813.png);color:#e98813}ul.dc_li_f7c808 li,ul li.dc_li_f7c808{background-image:url(../images/sprite_f7c808.png);color:#f7c808}ul.dc_li_74941f li,ul li.dc_li_74941f{background-image:url(../images/sprite_74941f.png);color:#74941f}ul.dc_li_3a491a li,ul li.dc_li_3a491a{background-image:url(../images/sprite_3a491a.png);color:#3a491a}
+ul.dc_list {
+    list-style: none;
+    margin: 0;
+    padding: 6px 0
+}
+
+ul.dc_list li {
+    background-image: url(../images/sprite_222222.png);
+    background-position: -67px -558px;
+    background-repeat: no-repeat;
+    color: #222222;
+    margin: 0;
+    padding: 0 0 5px 22px
+}
+
+ul.dc_li_arrow li, ul li.dc_li_arrow {
+    background-position: -303px -322px
+}
+
+ul.dc_li_comment li, ul li.dc_li_comment {
+    background-position: -380px -242px
+}
+
+ul.dc_li_bullet li, ul li.dc_li_bullet {
+    background-position: -66px -558px
+}
+
+ul.dc_li_minus li, ul li.dc_li_minus {
+    background-position: -101px -520px
+}
+
+ul.dc_li_check li, ul li.dc_li_check {
+    background-position: -461px -163px
+}
+
+ul.dc_li_plus li, ul li.dc_li_plus {
+    background-position: -141px -480px
+}
+
+ul.dc_li_carrow li, ul li.dc_li_carrow {
+    background-position: -619px -3px
+}
+
+ul.dc_li_star li, ul li.dc_li_star {
+    background-position: -580px -44px
+}
+
+ul.dc_li_222222 li, ul li.dc_li_222222 {
+    background-image: url(../images/sprite_222222.png);
+    color: #222222
+}
+
+ul.dc_li_092334 li, ul li.dc_li_092334 {
+    background-image: url(../images/sprite_092334.png);
+    color: #092334
+}
+
+ul.dc_li_00437f li, ul li.dc_li_00437f {
+    background-image: url(../images/sprite_00437f.png);
+    color: #00437f
+}
+
+ul.dc_li_008899 li, ul li.dc_li_008899 {
+    background-image: url(../images/sprite_008899.png);
+    color: #008899
+}
+
+ul.dc_li_3b424a li, ul li.dc_li_3b424a {
+    background-image: url(../images/sprite_3b424a.png);
+    color: #3b424a
+}
+
+ul.dc_li_625b56 li, ul li.dc_li_625b56 {
+    background-image: url(../images/sprite_625b56.png);
+    color: #625b56
+}
+
+ul.dc_li_ab998f li, ul li.dc_li_ab998f {
+    background-image: url(../images/sprite_ab998f.png);
+    color: #ab998f
+}
+
+ul.dc_li_788794 li, ul li.dc_li_788794 {
+    background-image: url(../images/sprite_788794.png);
+    color: #788794
+}
+
+ul.dc_li_717a75 li, ul li.dc_li_717a75 {
+    background-image: url(../images/sprite_717a75.png);
+    color: #717a75
+}
+
+ul.dc_li_79745d li, ul li.dc_li_79745d {
+    background-image: url(../images/sprite_79745d.png);
+    color: #79745d
+}
+
+ul.dc_li_372e25 li, ul li.dc_li_372e25 {
+    background-image: url(../images/sprite_372e25.png);
+    color: #372e25
+}
+
+ul.dc_li_6b3c02 li, ul li.dc_li_6b3c02 {
+    background-image: url(../images/sprite_6b3c02.png);
+    color: #6b3c02
+}
+
+ul.dc_li_dddddd li, ul li.dc_li_dddddd {
+    background-image: url(../images/sprite_dddddd.png);
+    color: #dddddd
+}
+
+ul.dc_li_4b2c5a li, ul li.dc_li_4b2c5a {
+    background-image: url(../images/sprite_4b2c5a.png);
+    color: #4b2c5a
+}
+
+ul.dc_li_bc006e li, ul li.dc_li_bc006e {
+    background-image: url(../images/sprite_bc006e.png);
+    color: #bc006e
+}
+
+ul.dc_li_770000 li, ul li.dc_li_770000 {
+    background-image: url(../images/sprite_770000.png);
+    color: #770000
+}
+
+ul.dc_li_e98813 li, ul li.dc_li_e98813 {
+    background-image: url(../images/sprite_e98813.png);
+    color: #e98813
+}
+
+ul.dc_li_f7c808 li, ul li.dc_li_f7c808 {
+    background-image: url(../images/sprite_f7c808.png);
+    color: #f7c808
+}
+
+ul.dc_li_74941f li, ul li.dc_li_74941f {
+    background-image: url(../images/sprite_74941f.png);
+    color: #74941f
+}
+
+ul.dc_li_3a491a li, ul li.dc_li_3a491a {
+    background-image: url(../images/sprite_3a491a.png);
+    color: #3a491a
+}

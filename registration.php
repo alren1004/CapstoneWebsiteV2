@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
                 );
                 if ($register_query) {
                     $get_user_id = mysql_query("SELECT user_id FROM users WHERE user_name = '" . $username . "'");
-                    if($get_user_id) {
+                    if ($get_user_id) {
                         $profile_insert_query = mysql_query("INSERT INTO profiles (first_name, last_name, background, education, skills, role, user_id) VALUES('"
                             . $first_name . "', '" . $last_name . "', '" . $background . "', '" . $education . "', '" . $skills . "', '" . $role .
                             "', '" . mysql_result($get_user_id, 0, "user_id") . "')"

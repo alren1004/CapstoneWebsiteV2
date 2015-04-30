@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/form.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css" />
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 </head>
 <body>
 
 <div class="wrapper">
 
     <?php
-    if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
+    if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) {
         // Logged in.
         include "logoutButton.html";
     } else {
@@ -52,7 +52,7 @@
                 $skills = $_POST['skills'];
                 $role = $_POST['role'];
                 $save_profile = mysql_query("UPDATE profiles SET background='" . $background . "', education='" . $education . "', skills='" . $skills . "', role='" . $role . "' WHERE profile_id =" . $profile_id . "");
-                if($save_profile){
+                if ($save_profile) {
                     echo "<p id='status' style='background-color: green;'>Data saved successfully.</p>";
                 } else {
                     echo "<p id='status' style='background-color: red;>Error saving data.</p>";
@@ -67,7 +67,7 @@
             echo "<input type='submit' id='edit' name='edit' value='Edit' />";
         } else {
 
-            echo"<centre><h3>Member Login</h3></centre>
+            echo "<centre><h3>Member Login</h3></centre>
                     <form action='landing_page.php' name='loginForm' id='loginForm' method='POST'>
                     <table border='0' cellspacing='0' cellpadding='4'  style='padding:0px; border:1px  #ccc; '>
                         <tr>
@@ -92,8 +92,10 @@
 
     <?php include "footer.html"; ?>
     <div class="copyRight">
-        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook" href="https://www.facebook.com/itBison">facebook</a>
-            <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
+        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook"
+                                                  href="https://www.facebook.com/itBison">facebook</a>
+            <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a
+                class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
     </div>
 
 </div>

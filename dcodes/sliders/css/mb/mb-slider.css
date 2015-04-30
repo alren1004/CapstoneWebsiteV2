@@ -1,2 +1,145 @@
 /* dCodes Framework:(c) TemplateAccess */
-#mbslider-container{width:100%;margin:0 auto;background:#000;-webkit-box-shadow:0px 0px 15px #000;-moz-box-shadow:0px 0px 15px #000;padding:50px 0px}.mb-wrapper{width:900px;/* default,this is overridden by script settings */ margin:0 auto;position:relative;left:0;top:0;background:#181818;border:solid 1px #666}/* Panel Wrapper */.mb-slider,.mb-scroll{width:100%;height:100%;overflow:hidden;margin:0 auto;padding:0px;position:relative;left:0px;top:0px}/*** Slider panel ***/.mb-slider .mb-panel{width:350px;/* default,this is overridden by script settings */ margin:5px 0;padding:5px;display:block;cursor:pointer;float:left;list-style:none}/* Cursor to arrow over current panel,pointer for all others,change .current class name using plugin option,currentPanel:'current' */.mb-slider .mb-panel.mb_current{cursor:auto}/*** Inside the panel ***/.mb-inside{padding:10px}.mb-inside *{max-width:100%}/*** Left & Right Navigation Arrows ***/a.mb-scrollButtons{display:block;width:50px;height:50px;background:transparent url(../../images/mb/arrows.png) no-repeat;position:absolute;top:50%;margin-top:-29px;/* if you change the arrow images,you may have to adjust this (1/2 height of arrow image) */ cursor:pointer;text-decoration:none;outline:0;border:0}a.mb-scrollButtons.mb-left{background-position:left top;left:-65px}a.mb-scrollButtons.mb-right{background-position:right top;right:-65px}a.mb-scrollButtons.mb-left:hover{background-position:left bottom}a.mb-scrollButtons.mb-right:hover{background-position:right bottom}/*** Controls added below the panels ***/.mb-controls{margin:0 auto;text-align:center;position:relative;z-index:100}.mb-controls a{color:#444;font-size:13px;font-family:Arial,Helvetica,sans-serif;display:inline-block;text-decoration:none;padding:2px;height:18px;margin:4px;text-align:center;outline:0}.mb-controls a.mb_current,.mb-controls a:hover{color:#fff}#slider-one p,#slider-two p,#slider-three p,#slider-four p,#slider-five p{font-size:18px;color:#fff;position:relative;top:-2.8em;text-align:center;font-family:"Lobster",Arial,Helvetica,sans-serif;text-shadow:0px 0px 2px #000}.mb-inside a,.mb-inside a:visited{color:#ccc;text-decoration:none;font-size:12px;font-family:Arial,Helvetica,sans-serif}.mb-inside a:hover{color:#fff;text-decoration:none;font-size:12px;cursor:pointer;font-family:Arial,Helvetica,sans-serif;text-decoration:underline}/* panel images */.mb-inside img{width:100%}
+#mbslider-container {
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+    -webkit-box-shadow: 0px 0px 15px #000;
+    -moz-box-shadow: 0px 0px 15px #000;
+    padding: 50px 0px
+}
+
+.mb-wrapper {
+    width: 900px; /* default,this is overridden by script settings */
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    background: #181818;
+    border: solid 1px #666
+}
+
+/* Panel Wrapper */
+.mb-slider, .mb-scroll {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    left: 0px;
+    top: 0px
+}
+
+/*** Slider panel ***/
+.mb-slider .mb-panel {
+    width: 350px; /* default,this is overridden by script settings */
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+    float: left;
+    list-style: none
+}
+
+/* Cursor to arrow over current panel,pointer for all others,change .current class name using plugin option,currentPanel:'current' */
+.mb-slider .mb-panel.mb_current {
+    cursor: auto
+}
+
+/*** Inside the panel ***/
+.mb-inside {
+    padding: 10px
+}
+
+.mb-inside * {
+    max-width: 100%
+}
+
+/*** Left & Right Navigation Arrows ***/
+a.mb-scrollButtons {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: transparent url(../../images/mb/arrows.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -29px; /* if you change the arrow images,you may have to adjust this (1/2 height of arrow image) */
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    border: 0
+}
+
+a.mb-scrollButtons.mb-left {
+    background-position: left top;
+    left: -65px
+}
+
+a.mb-scrollButtons.mb-right {
+    background-position: right top;
+    right: -65px
+}
+
+a.mb-scrollButtons.mb-left:hover {
+    background-position: left bottom
+}
+
+a.mb-scrollButtons.mb-right:hover {
+    background-position: right bottom
+}
+
+/*** Controls added below the panels ***/
+.mb-controls {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 100
+}
+
+.mb-controls a {
+    color: #444;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px;
+    height: 18px;
+    margin: 4px;
+    text-align: center;
+    outline: 0
+}
+
+.mb-controls a.mb_current, .mb-controls a:hover {
+    color: #fff
+}
+
+#slider-one p, #slider-two p, #slider-three p, #slider-four p, #slider-five p {
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    top: -2.8em;
+    text-align: center;
+    font-family: "Lobster", Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 2px #000
+}
+
+.mb-inside a, .mb-inside a:visited {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.mb-inside a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline
+}
+
+/* panel images */
+.mb-inside img {
+    width: 100%
+}

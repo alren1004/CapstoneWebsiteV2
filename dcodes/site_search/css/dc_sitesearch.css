@@ -1,2 +1,215 @@
 /* dCodes Framework:(c) TemplateAccess */
-#gsearchForm{background-color:#666;border-radius:6px;margin-bottom:40px;moz-border-radius:6px;padding:20px 20px 10px;position:relative;webkit-border-radius:6px;width:470px}fieldset{border:none}#searchInputContainer{background:url("../images/searchBox.png") no-repeat;float:left;height:36px;margin-right:12px;width:420px}#gsearch1{background:url("../images/searchBox.png") no-repeat;border:none;color:#333;float:left;height:36px;line-height:36px;margin-right:6px;outline:medium none;padding:0 0 0 35px;width:305px}.gsearch-icons{height:19px;list-style:none;margin:10px 0 0 335px;position:relative}.gsearch-icons li{background:url("../images/icons.png") no-repeat;cursor:pointer;float:left;height:19px;margin-right:5px;text-indent:-9999px}li.web{width:15px}li.web.active,li.web:hover{background-position:left bottom}li.images{background-position:-18px 0;width:22px}li.images.active,li.images:hover{background-position:-18px bottom}li.news{background-position:-44px 0;width:14px}li.news.active,li.news:hover{background-position:-44px bottom}li.videos{background-position:right 0;width:17px}li.videos.active,li.videos:hover{background-position:right bottom}span.arrow{background:url('../images/arrow.png') no-repeat;height:6px;left:0;margin:21px 0 0 5px;position:absolute;width:11px}#gsubmitButton{background:url('../images/buttons.png') no-repeat;border:none;cursor:pointer;height:36px;overflow:hidden;text-indent:-9999px;text-transform:uppercase;width:83px}#gsubmitButton:hover{background-position:left bottom}#searchInContainer{float:left;margin-top:12px;width:330px}label{color:#DDDDDD;cursor:pointer;font-size:11px;margin-right:10px;position:relative;right:-2px;top:-2px;white-space:nowrap}input[type=radio]{cursor:pointer}.gpageContainer{border-bottom:1px solid #5e7481;box-shadow:0 1px 0 #798e9c;moz-box-shadow:0 1px 0 #798e9c;webkit-box-shadow:0 1px 0 #798e9c}p.notFound{padding:0 0 40px;text-align:center}.webResult{margin-bottom:20px}.webResult h2{font-size:14px;font-weight:normal}.webResult h2 b{color:#1122cc;font-weight:bold}.webResult h2 a{border:none;color:#1122cc}.webResult p{color:#666;font-size:11px}.webResult p b{color:#1122cc;font-weight:bold}.webResult>a{margin-left:8px}.imageResult{float:left;height:180px;margin:0 0 20px 10px;overflow:hidden;text-align:center;width:152px}.imageResult img{border:none;display:block}.imageResult a.pic{border:1px solid #ccc;border-radius:3px 3px 0 0;box-shadow:2px 0 2px rgba(0,0,0,0.1),-2px 0 2px rgba(0,0,0,0.1);display:block;margin:0 auto 15px}#gmore{background:url('../images/more.png') no-repeat;cursor:pointer;height:24px;margin:40px auto;width:83px}#gmore:hover{background-position:left bottom}.clear{clear:both}
+#gsearchForm {
+    background-color: #666;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    moz-border-radius: 6px;
+    padding: 20px 20px 10px;
+    position: relative;
+    webkit-border-radius: 6px;
+    width: 470px
+}
+
+fieldset {
+    border: none
+}
+
+#searchInputContainer {
+    background: url("../images/searchBox.png") no-repeat;
+    float: left;
+    height: 36px;
+    margin-right: 12px;
+    width: 420px
+}
+
+#gsearch1 {
+    background: url("../images/searchBox.png") no-repeat;
+    border: none;
+    color: #333;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 6px;
+    outline: medium none;
+    padding: 0 0 0 35px;
+    width: 305px
+}
+
+.gsearch-icons {
+    height: 19px;
+    list-style: none;
+    margin: 10px 0 0 335px;
+    position: relative
+}
+
+.gsearch-icons li {
+    background: url("../images/icons.png") no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 19px;
+    margin-right: 5px;
+    text-indent: -9999px
+}
+
+li.web {
+    width: 15px
+}
+
+li.web.active, li.web:hover {
+    background-position: left bottom
+}
+
+li.images {
+    background-position: -18px 0;
+    width: 22px
+}
+
+li.images.active, li.images:hover {
+    background-position: -18px bottom
+}
+
+li.news {
+    background-position: -44px 0;
+    width: 14px
+}
+
+li.news.active, li.news:hover {
+    background-position: -44px bottom
+}
+
+li.videos {
+    background-position: right 0;
+    width: 17px
+}
+
+li.videos.active, li.videos:hover {
+    background-position: right bottom
+}
+
+span.arrow {
+    background: url('../images/arrow.png') no-repeat;
+    height: 6px;
+    left: 0;
+    margin: 21px 0 0 5px;
+    position: absolute;
+    width: 11px
+}
+
+#gsubmitButton {
+    background: url('../images/buttons.png') no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    width: 83px
+}
+
+#gsubmitButton:hover {
+    background-position: left bottom
+}
+
+#searchInContainer {
+    float: left;
+    margin-top: 12px;
+    width: 330px
+}
+
+label {
+    color: #DDDDDD;
+    cursor: pointer;
+    font-size: 11px;
+    margin-right: 10px;
+    position: relative;
+    right: -2px;
+    top: -2px;
+    white-space: nowrap
+}
+
+input[type=radio] {
+    cursor: pointer
+}
+
+.gpageContainer {
+    border-bottom: 1px solid #5e7481;
+    box-shadow: 0 1px 0 #798e9c;
+    moz-box-shadow: 0 1px 0 #798e9c;
+    webkit-box-shadow: 0 1px 0 #798e9c
+}
+
+p.notFound {
+    padding: 0 0 40px;
+    text-align: center
+}
+
+.webResult {
+    margin-bottom: 20px
+}
+
+.webResult h2 {
+    font-size: 14px;
+    font-weight: normal
+}
+
+.webResult h2 b {
+    color: #1122cc;
+    font-weight: bold
+}
+
+.webResult h2 a {
+    border: none;
+    color: #1122cc
+}
+
+.webResult p {
+    color: #666;
+    font-size: 11px
+}
+
+.webResult p b {
+    color: #1122cc;
+    font-weight: bold
+}
+
+.webResult > a {
+    margin-left: 8px
+}
+
+.imageResult {
+    float: left;
+    height: 180px;
+    margin: 0 0 20px 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 152px
+}
+
+.imageResult img {
+    border: none;
+    display: block
+}
+
+.imageResult a.pic {
+    border: 1px solid #ccc;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto 15px
+}
+
+#gmore {
+    background: url('../images/more.png') no-repeat;
+    cursor: pointer;
+    height: 24px;
+    margin: 40px auto;
+    width: 83px
+}
+
+#gmore:hover {
+    background-position: left bottom
+}
+
+.clear {
+    clear: both
+}

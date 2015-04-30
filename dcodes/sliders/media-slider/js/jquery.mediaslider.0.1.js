@@ -1,21 +1,21 @@
 ﻿/**
-* jQuery.fn.mediaslider
-* original: dualSlider
-*
-* @author Rob Phillips (Front End Developer - Hugo & Cat - http://www.hugoandcat.com)
-* @version 0.1
-*
-* Requirements:
-* jquery.1.3.2.js - http://jquery.com/
-* jquery.easing.1.3.js - http://gsgd.co.uk/sandbox/jquery/easing/
-* jquery.timers-1.2.js - http://plugins.jquery.com/project/timers
+ * jQuery.fn.mediaslider
+ * original: dualSlider
+ *
+ * @author Rob Phillips (Front End Developer - Hugo & Cat - http://www.hugoandcat.com)
+ * @version 0.1
+ *
+ * Requirements:
+ * jquery.1.3.2.js - http://jquery.com/
+ * jquery.easing.1.3.js - http://gsgd.co.uk/sandbox/jquery/easing/
+ * jquery.timers-1.2.js - http://plugins.jquery.com/project/timers
 
-**/
+ **/
 
 
-(function($) {
+(function ($) {
 
-    $.fn.dualSlider = function(options) {
+    $.fn.dualSlider = function (options) {
 
         // default configuration properties
         var defaults = {
@@ -29,7 +29,7 @@
 
         var options = $.extend(defaults, options);
 
-        this.each(function() {
+        this.each(function () {
 
             var obj = $(this);
             var carousel;
@@ -53,16 +53,16 @@
             $("#numbers", obj).html(carouselLinks);
 
             //Bind carousel controls
-            $(".next", obj).click(function() {
+            $(".next", obj).click(function () {
                 carouselPage(parseInt(carouselPosition + 1), false);
 
             });
-            $(".previous", obj).click(function() {
+            $(".previous", obj).click(function () {
                 carouselPage(parseInt(carouselPosition - 1), false);
             });
 
 
-            $("#numbers a", obj).click(function() {
+            $("#numbers a", obj).click(function () {
 
                 //alert($(this).attr("rel"));
                 carouselPage($(this).attr("rel"), false);
@@ -95,7 +95,7 @@
                 }, {
                     "duration": options.durationCarousel, "easing": options.easingCarousel,
 
-                    complete: function() {
+                    complete: function () {
 
                         //Now animate the details
                         $(".carousel .details").animate({
@@ -107,11 +107,11 @@
                         checkPreviousNext();
                     }
                 });
-                
+
             }
 
             if (options.auto == true) {
-                $("body").everyTime(options.autoDelay, "autoScroll", function() {
+                $("body").everyTime(options.autoDelay, "autoScroll", function () {
                     carouselPage(carouselPosition + 1, true);
                 }, carouselTotal - 1);
             }

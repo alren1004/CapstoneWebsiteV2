@@ -1,26 +1,26 @@
 ﻿/**
-* jQuery.fn.mediaslider
-* original: dualSlider
-*
-* @author Rob Phillips (Front End Developer - Hugo & Cat - http://www.hugoandcat.com)
-* @version 0.3
-* @web http://www.hugoandcat.com/DualSlider/index.html
-*
-* Requirements:
-* jquery.1.3.2.js - http://jquery.com/
-* jquery.easing.1.3.js - http://gsgd.co.uk/sandbox/jquery/easing/
-* jquery.timers-1.2.js - http://plugins.jquery.com/project/timers
-*
-* 0.2 - Tested and fixed for IE6+, auto loops, manual pause/play controls
-*     - Disabled buttons until animation finishes - Thanks for the bug John.
-* 0.3 - Now with a seamless loop, instead of that nasty rewind...was 'too much' apparently
-*
-**/
+ * jQuery.fn.mediaslider
+ * original: dualSlider
+ *
+ * @author Rob Phillips (Front End Developer - Hugo & Cat - http://www.hugoandcat.com)
+ * @version 0.3
+ * @web http://www.hugoandcat.com/DualSlider/index.html
+ *
+ * Requirements:
+ * jquery.1.3.2.js - http://jquery.com/
+ * jquery.easing.1.3.js - http://gsgd.co.uk/sandbox/jquery/easing/
+ * jquery.timers-1.2.js - http://plugins.jquery.com/project/timers
+ *
+ * 0.2 - Tested and fixed for IE6+, auto loops, manual pause/play controls
+ *     - Disabled buttons until animation finishes - Thanks for the bug John.
+ * 0.3 - Now with a seamless loop, instead of that nasty rewind...was 'too much' apparently
+ *
+ **/
 
 
-(function($) {
+(function ($) {
 
-    $.fn.dualSlider = function(options) {
+    $.fn.dualSlider = function (options) {
 
         // default configuration properties
         var defaults = {
@@ -34,7 +34,7 @@
 
         var options = $.extend(defaults, options);
 
-        this.each(function() {
+        this.each(function () {
 
             var obj = $(this);
             var carousel;
@@ -45,25 +45,24 @@
             var carouselwidth = $(obj).width();
             var detailWidth = $(".panel .details_wrapper", obj).width();
             var locked = false;
-			
-			if(options.auto == true)
-			{
-				//Creat duplicates for seamless looping
-				$(".backgrounds", obj).prepend($(".backgrounds .item:last-child", obj).clone().css("margin-left", "-" + carouselwidth + "px"));
-				$(".backgrounds", obj).append($(".backgrounds .item:nth-child(2)", obj).clone());
 
-				$(".details", obj).prepend($(".details .detail:last-child", obj).clone().css("margin-left", "-" + detailWidth + "px"));
-				$(".details", obj).append($(".details .detail:nth-child(2)", obj).clone());
-			}
-			else{
-				$(".previous", obj).hide();
-				$(".play, .pause", obj).hide();
-			}
+            if (options.auto == true) {
+                //Creat duplicates for seamless looping
+                $(".backgrounds", obj).prepend($(".backgrounds .item:last-child", obj).clone().css("margin-left", "-" + carouselwidth + "px"));
+                $(".backgrounds", obj).append($(".backgrounds .item:nth-child(2)", obj).clone());
+
+                $(".details", obj).prepend($(".details .detail:last-child", obj).clone().css("margin-left", "-" + detailWidth + "px"));
+                $(".details", obj).append($(".details .detail:nth-child(2)", obj).clone());
+            }
+            else {
+                $(".previous", obj).hide();
+                $(".play, .pause", obj).hide();
+            }
 
 
             //Set main background width
-            $(".backgrounds", obj).css("width", ((carouselTotal+1) * carouselwidth) + 100 + "px");
-            
+            $(".backgrounds", obj).css("width", ((carouselTotal + 1) * carouselwidth) + 100 + "px");
+
 
             //Set main detail width
             $(".details_wrapper .details", obj).css("width", detailWidth * carouselwidth + "px");
@@ -75,25 +74,25 @@
             $("#numbers", obj).html(carouselLinks);
 
             //Bind carousel controls
-            $(".next", obj).click(function() {
+            $(".next", obj).click(function () {
                 carouselPage(parseInt(carouselPosition + 1), false);
                 lock();
             });
-            
-            $(".previous", obj).click(function() {
+
+            $(".previous", obj).click(function () {
                 carouselPage(parseInt(carouselPosition - 1), false);
                 lock();
             });
 
-            $("#numbers a", obj).click(function() {
+            $("#numbers a", obj).click(function () {
                 carouselPage($(this).attr("rel"), false);
                 lock();
             });
 
-            $(".pause", obj).click(function() {
+            $(".pause", obj).click(function () {
                 autoPause();
             });
-            $(".play", obj).click(function() {
+            $(".play", obj).click(function () {
                 autoPlay();
             });
 
@@ -109,15 +108,14 @@
             function checkPreviousNext() {
                 $("#numbers a", obj).removeClass("selected");
                 $("#numbers .link" + carouselPosition, obj).addClass("selected");
-                
-				if(options.auto == false)
-				{
-					(carouselPosition == carouselTotal) ? $(".next", obj).hide() : $(".next", obj).show();
-					(carouselPosition < 2) ? $(".previous", obj).hide() : $(".previous", obj).show();
-				}
+
+                if (options.auto == false) {
+                    (carouselPosition == carouselTotal) ? $(".next", obj).hide() : $(".next", obj).show();
+                    (carouselPosition < 2) ? $(".previous", obj).hide() : $(".previous", obj).show();
+                }
             }
-			
-			function adjust() {
+
+            function adjust() {
 
                 if (carouselPosition < 1) {
                     //alert("trickery required");
@@ -157,7 +155,7 @@
                     }, {
                         "duration": options.durationCarousel, "easing": options.easingCarousel,
 
-                        complete: function() {
+                        complete: function () {
 
                             //Now animate the details
                             $(".details", obj).animate({
@@ -167,12 +165,12 @@
 
                             });
                             adjust();
-							checkPreviousNext();
+                            checkPreviousNext();
                             unLock();
                         }
                     });
                 }
-                
+
 
             }
 
@@ -185,7 +183,7 @@
             function autoPlay() {
                 $(".pause", obj).show();
                 $(".play", obj).hide();
-                $("body").everyTime(options.autoDelay, "autoScroll", function() {
+                $("body").everyTime(options.autoDelay, "autoScroll", function () {
                     carouselPage(carouselPosition + 1, true);
                     lock();
                 });

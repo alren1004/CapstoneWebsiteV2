@@ -13,7 +13,7 @@
 <div class="wrapper">
 
     <?php
-    if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
+    if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) {
         // Logged in.
         include "logoutButton.html";
     } else {
@@ -25,7 +25,7 @@
 
     <div class="container">
         <?php
-        if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
+        if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) {
             // Logged in.
             echo "<p>Logged in.</p>";
         } else {

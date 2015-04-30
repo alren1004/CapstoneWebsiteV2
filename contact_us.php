@@ -8,13 +8,13 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="dcodes/maps/css/dc_maps.css" />
-    <link type="text/css" rel="stylesheet" href="dcodes/columns/css/dc_columns.css" />
-    <link type="text/css" rel="stylesheet" href="dcodes/contact_forms/css/dc_form_contact_dark.css" />
-    <link type="text/css" rel="stylesheet" href="dcodes/contact_forms/css/dc_form_contact_light.css" />
-    <link type="text/css" rel="stylesheet" href="dcodes/divider/css/dc_divider.css" />
+    <link rel="stylesheet" type="text/css" href="dcodes/maps/css/dc_maps.css"/>
+    <link type="text/css" rel="stylesheet" href="dcodes/columns/css/dc_columns.css"/>
+    <link type="text/css" rel="stylesheet" href="dcodes/contact_forms/css/dc_form_contact_dark.css"/>
+    <link type="text/css" rel="stylesheet" href="dcodes/contact_forms/css/dc_form_contact_light.css"/>
+    <link type="text/css" rel="stylesheet" href="dcodes/divider/css/dc_divider.css"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Neuton">
-    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css" />
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 
     <style>
 
@@ -26,24 +26,31 @@
 
         }
 
-
         textarea, input:required, input[required] input:invalid {
             border: 2px solid darkblue;
         }
 
-        textarea {height:15em;}
-        #submit, #reset {margin-left:12em; width:100px; height:3em;
+        textarea {
+            height: 15em;
         }
 
-        #submit:hover {font-weight: bold; background-color: #bbbbbb;
+        #submit, #reset {
+            margin-left: 12em;
+            width: 100px;
+            height: 3em;
         }
 
-        #reset:hover {font-weight: bold; background-color: #bbbbbb;
+        #submit:hover {
+            font-weight: bold;
+            background-color: #bbbbbb;
+        }
+
+        #reset:hover {
+            font-weight: bold;
+            background-color: #bbbbbb;
         }
 
     </style>
-
-
 
 
 </head>
@@ -52,7 +59,7 @@
 <div class="wrapper">
 
     <?php
-    if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
+    if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) {
         // Logged in.
         include "logoutButton.html";
     } else {
@@ -65,16 +72,15 @@
     <div class="container">
 
 
-
         <?php
 
-        if(!empty($_POST['email'])){
+        if (!empty($_POST['email'])) {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $subject = $_POST['subject'];
             $comments = $_POST['message'];
             $headers = "From: " . $email . "\r\n" . "Cc: daniel.heidemeyer@gallaudet.edu, sung.an@gallaudet.edu\r\n";
-            if(mail("timothy.yu@gallaudet.edu", $subject, $comments, $headers)){
+            if (mail("timothy.yu@gallaudet.edu", $subject, $comments, $headers)) {
                 echo "<p style='color:green;'>Email successfully sent! Please wait up to 24 hours for a response.</p>";
             } else {
                 echo "<p style='color:red;'>Email not sent. Try again.</p>";
@@ -113,12 +119,14 @@
              
                   ';
         }
-    ?>
+        ?>
     </div>
     <?php include "footer.html"; ?>
     <div class="copyRight">
-        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook" href="https://www.facebook.com/itBison">facebook</a>
-            <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
+        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook"
+                                                  href="https://www.facebook.com/itBison">facebook</a>
+            <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a
+                class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
     </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -129,15 +137,14 @@
 <script>
     function initialize() {
         var mapProp = {
-            center:new google.maps.LatLng(38.9073649,-76.99373249999996),
-            zoom:5,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
+            center: new google.maps.LatLng(38.9073649, -76.99373249999996),
+            zoom: 5,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-
 
 
 </body>

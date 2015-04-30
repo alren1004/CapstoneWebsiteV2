@@ -34,18 +34,17 @@ CREATE TABLE mentors (
   startDate            DATE,
   endDate              DATE,
   FOREIGN KEY (profile_id) REFERENCES profiles (profile_id)
-
 );
 
 CREATE TABLE internships (
-  internship_id     INT(25) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  description       VARCHAR(255),
-  keyword_major     VARCHAR(255) NOT NULL,
-  location          VARCHAR(255) NOT NULL,
-  company           VARCHAR(255) NOT NULL,
-  employer_type     VARCHAR(255),
-  compensation      VARCHAR(255),
-  full_part_time    VARCHAR(255),
-  email             VARCHAR(255),
-  phone_number      VARCHAR(12)
+  internship_id  INT(25)      NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  description    VARCHAR(255),
+  keyword_major  VARCHAR(255) NOT NULL,
+  location       VARCHAR(255) NOT NULL,
+  company        VARCHAR(255) NOT NULL,
+  employer_type  VARCHAR(255),
+  compensation   VARCHAR(255),
+  full_part_time VARCHAR(255),
+  email          VARCHAR(255),
+  phone_number   VARCHAR(12)
 )

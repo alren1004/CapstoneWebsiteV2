@@ -1,2 +1,272 @@
 /* dCodes Framework:(c) TemplateAccess */
-.dc_seal_icons_gpercent_128{display:inline-block;height:128px;margin:5px;text-indent:20px;vertical-align:middle;width:128px}.dc_seal_icons_gpercent_128:hover{opacity:0.9}.dc_seal_icons_gpercent_84{display:inline-block;height:84px;margin:5px;text-indent:20px;vertical-align:middle;width:84px}.dc_seal_icons_gpercent_84:hover{opacity:0.9}.dc_money_guarantee_silver{background:url(money_guarantee_silver.png) no-repeat;background-size:100% 100%}.dc_money_guarantee_gold{background:url(money_guarantee_gold.png) no-repeat;background-size:100% 100%}.dc_money_guarantee_red{background:url(money_guarantee_red.png) no-repeat;background-size:100% 100%}.dc_seal_icons_gday_128{display:inline-block;height:128px;margin:5px;text-indent:20px;vertical-align:middle;width:169px}.dc_seal_icons_gday_128:hover{opacity:0.9}.dc_seal_icons_gday_97{display:inline-block;height:97px;margin:5px;text-indent:20px;vertical-align:middle;width:128px}.dc_seal_icons_gday_97:hover{opacity:0.9}.dc_money_guarantee_redsilver30{background:url(money_guarantee_redsilver30.png) no-repeat;background-size:100% 100%}.dc_money_guarantee_redsilver60{background:url(money_guarantee_redsilver60.png) no-repeat;background-size:100% 100%}.dc_money_guarantee_redsilver90{background:url(money_guarantee_redsilver90.png) no-repeat;background-size:100% 100%}.dc_seal_icons_satisfaction_128{display:inline-block;height:128px;margin:5px;text-indent:20px;vertical-align:middle;width:128px}.dc_seal_icons_satisfaction_128:hover{opacity:0.9}.dc_seal_icons_satisfaction_84{display:inline-block;height:84px;margin:5px;text-indent:20px;vertical-align:middle;width:84px}.dc_seal_icons_satisfaction_84:hover{opacity:0.9}.dc_satisfaction_guarantee_silver{background:url(satisfaction_guarantee_silver.png) no-repeat;background-size:100% 100%}.dc_satisfaction_guarantee_gold{background:url(satisfaction_guarantee_gold.png) no-repeat;background-size:100% 100%}.dc_satisfaction_guarantee_red{background:url(satisfaction_guarantee_red.png) no-repeat;background-size:100% 100%}.dc_seal_icons_rating_64{display:inline-block;height:64px;margin:5px;text-indent:20px;vertical-align:middle;width:64px}.dc_seal_icons_rating_64:hover{opacity:0.9}.dc_seal_icons_rating_44{display:inline-block;height:44px;margin:5px;text-indent:20px;vertical-align:middle;width:44px}.dc_seal_icons_rating_32:hover{opacity:0.9}.dc_seal_icons_rating_32{display:inline-block;height:32px;margin:5px;text-indent:20px;vertical-align:middle;width:32px}.dc_seal_icons_rating_32:hover{opacity:0.9}.dc_first_seal{background:url(first_seal.png) no-repeat;background-size:100% 100%}.dc_a_seal{background:url(a_seal.png) no-repeat;background-size:100% 100%}.dc_star_seal{background:url(star_seal.png) no-repeat;background-size:100% 100%}.dc_best_seal{background:url(best_seal.png) no-repeat;background-size:100% 100%}.dc_recommended_seal{background:url(recommended_seal.png) no-repeat;background-size:100% 100%;display:inline-block;height:107px;margin:8px;text-indent:20px;vertical-align:middle;width:128px}.dc_recommended_seal:hover{opacity:0.9}.dc_premium_guarantee_black_seal{background:url(premium_guarantee_black.png) no-repeat;background-size:100% 100%;display:inline-block;height:128px;margin:8px;text-indent:20px;vertical-align:middle;width:183px}.dc_premium_guarantee_black_seal:hover{opacity:0.9}.dc_premium_guarantee_silver_seal{background:url(premium_guarantee_silver.png) no-repeat;background-size:100% 100%;display:inline-block;height:128px;margin:8px;text-indent:20px;vertical-align:middle;width:169px}.dc_premium_guarantee_silver_seal:hover{opacity:0.9}.dc_recommended_seal_small{background:url(recommended_seal.png) no-repeat;background-size:100% 100%;display:inline-block;height:81px;margin:8px;text-indent:20px;vertical-align:middle;width:99px}.dc_recommended_seal_small:hover{opacity:0.9}.dc_premium_guarantee_black_seal_small{background:url(premium_guarantee_black.png) no-repeat;background-size:100% 100%;display:inline-block;height:81px;margin:8px;text-indent:20px;vertical-align:middle;width:120px}.dc_premium_guarantee_black_seal_small:hover{opacity:0.9}.dc_premium_guarantee_silver_seal_small{background:url(premium_guarantee_silver.png) no-repeat;background-size:100% 100%;display:inline-block;height:91px;margin:8px;text-indent:20px;vertical-align:middle;width:120px}.dc_premium_guarantee_silver_seal_small:hover{opacity:0.9}
+.dc_seal_icons_gpercent_128 {
+    display: inline-block;
+    height: 128px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 128px
+}
+
+.dc_seal_icons_gpercent_128:hover {
+    opacity: 0.9
+}
+
+.dc_seal_icons_gpercent_84 {
+    display: inline-block;
+    height: 84px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 84px
+}
+
+.dc_seal_icons_gpercent_84:hover {
+    opacity: 0.9
+}
+
+.dc_money_guarantee_silver {
+    background: url(money_guarantee_silver.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_money_guarantee_gold {
+    background: url(money_guarantee_gold.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_money_guarantee_red {
+    background: url(money_guarantee_red.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_seal_icons_gday_128 {
+    display: inline-block;
+    height: 128px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 169px
+}
+
+.dc_seal_icons_gday_128:hover {
+    opacity: 0.9
+}
+
+.dc_seal_icons_gday_97 {
+    display: inline-block;
+    height: 97px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 128px
+}
+
+.dc_seal_icons_gday_97:hover {
+    opacity: 0.9
+}
+
+.dc_money_guarantee_redsilver30 {
+    background: url(money_guarantee_redsilver30.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_money_guarantee_redsilver60 {
+    background: url(money_guarantee_redsilver60.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_money_guarantee_redsilver90 {
+    background: url(money_guarantee_redsilver90.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_seal_icons_satisfaction_128 {
+    display: inline-block;
+    height: 128px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 128px
+}
+
+.dc_seal_icons_satisfaction_128:hover {
+    opacity: 0.9
+}
+
+.dc_seal_icons_satisfaction_84 {
+    display: inline-block;
+    height: 84px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 84px
+}
+
+.dc_seal_icons_satisfaction_84:hover {
+    opacity: 0.9
+}
+
+.dc_satisfaction_guarantee_silver {
+    background: url(satisfaction_guarantee_silver.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_satisfaction_guarantee_gold {
+    background: url(satisfaction_guarantee_gold.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_satisfaction_guarantee_red {
+    background: url(satisfaction_guarantee_red.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_seal_icons_rating_64 {
+    display: inline-block;
+    height: 64px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 64px
+}
+
+.dc_seal_icons_rating_64:hover {
+    opacity: 0.9
+}
+
+.dc_seal_icons_rating_44 {
+    display: inline-block;
+    height: 44px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 44px
+}
+
+.dc_seal_icons_rating_32:hover {
+    opacity: 0.9
+}
+
+.dc_seal_icons_rating_32 {
+    display: inline-block;
+    height: 32px;
+    margin: 5px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 32px
+}
+
+.dc_seal_icons_rating_32:hover {
+    opacity: 0.9
+}
+
+.dc_first_seal {
+    background: url(first_seal.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_a_seal {
+    background: url(a_seal.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_star_seal {
+    background: url(star_seal.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_best_seal {
+    background: url(best_seal.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dc_recommended_seal {
+    background: url(recommended_seal.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 107px;
+    margin: 8px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 128px
+}
+
+.dc_recommended_seal:hover {
+    opacity: 0.9
+}
+
+.dc_premium_guarantee_black_seal {
+    background: url(premium_guarantee_black.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 128px;
+    margin: 8px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 183px
+}
+
+.dc_premium_guarantee_black_seal:hover {
+    opacity: 0.9
+}
+
+.dc_premium_guarantee_silver_seal {
+    background: url(premium_guarantee_silver.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 128px;
+    margin: 8px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 169px
+}
+
+.dc_premium_guarantee_silver_seal:hover {
+    opacity: 0.9
+}
+
+.dc_recommended_seal_small {
+    background: url(recommended_seal.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 81px;
+    margin: 8px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 99px
+}
+
+.dc_recommended_seal_small:hover {
+    opacity: 0.9
+}
+
+.dc_premium_guarantee_black_seal_small {
+    background: url(premium_guarantee_black.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 81px;
+    margin: 8px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 120px
+}
+
+.dc_premium_guarantee_black_seal_small:hover {
+    opacity: 0.9
+}
+
+.dc_premium_guarantee_silver_seal_small {
+    background: url(premium_guarantee_silver.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 91px;
+    margin: 8px;
+    text-indent: 20px;
+    vertical-align: middle;
+    width: 120px
+}
+
+.dc_premium_guarantee_silver_seal_small:hover {
+    opacity: 0.9
+}

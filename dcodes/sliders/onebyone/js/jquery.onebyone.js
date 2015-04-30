@@ -69,7 +69,7 @@
             var J = i.originalEvent.touches[0] || i.originalEvent.changedTouches[0];
             if (m) {
                 t = J.pageX - this.mouseX;
-                y.css("left", - H * D + t);
+                y.css("left", -H * D + t);
                 if (E.slideShow) {
                     g()
                 }
@@ -121,7 +121,7 @@
             y.mousemove(function (i) {
                 if (m) {
                     t = i.pageX - this.mouseX;
-                    y.css("left", - H * D + t);
+                    y.css("left", -H * D + t);
                     if (E.slideShow) {
                         g()
                     }
@@ -300,6 +300,7 @@
                 }
             })
         }
+
         var B;
         if (E.responsive) {
             B = y.parent().width();
@@ -327,9 +328,11 @@
                 k.css("top", G * B / p * 0.5 - 40)
             }
         }
+
         function g() {
             clearInterval(y.data("interval"))
         }
+
         function d() {
             clearInterval(y.data("interval"));
             slideShowInt = setInterval(function () {
@@ -337,18 +340,21 @@
             }, E.slideShowDelay);
             y.data("interval", slideShowInt)
         }
+
         function r() {
             var i = H;
             i++;
             i = i >= o ? 0 : i;
             u(i)
         }
+
         function F() {
             var i = H;
             i--;
             i = i < 0 ? o - 1 : i;
             u(i)
         }
+
         return this
     }
 })(jQuery);

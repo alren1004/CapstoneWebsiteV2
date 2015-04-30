@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/internship.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css" />
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 </head>
 <body>
 
@@ -30,98 +30,97 @@
         </form>
 
         <h1><i>Internship Search</i></h1>
-            <form action="internship_search.php" method="POST">
-                <table border="0" cellspacing="0" cellpadding="6" style="padding:25px; border:1px dotted #ccc; ">
-                    <tr>
-                        <td><label>Location</label></td>
-                        <td><input name="Location" placeholder="City, State or Zip Code" type="text" size="25" /></td>
-                    </tr>
-                    <tr>
-                        <td><label>Company</label></td>
-                        <td><input type="Company" placeholder="Microsoft, IBM, Google" size="25" /></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Sector">Employer Type</label></td>
-                        <td><select data-val="true" data-val-required="The Employer Type field is required." id="Sector" name="Sector">
+
+        <form action="internship_search.php" method="POST">
+            <table border="0" cellspacing="0" cellpadding="6" style="padding:25px; border:1px dotted #ccc; ">
+                <tr>
+                    <td><label>Location</label></td>
+                    <td><input name="Location" placeholder="City, State or Zip Code" type="text" size="25"/></td>
+                </tr>
+                <tr>
+                    <td><label>Company</label></td>
+                    <td><input type="Company" placeholder="Microsoft, IBM, Google" size="25"/></td>
+                </tr>
+                <tr>
+                    <td><label for="Sector">Employer Type</label></td>
+                    <td><select data-val="true" data-val-required="The Employer Type field is required." id="Sector"
+                                name="Sector">
                             <option selected="selected" value="None">All</option>
                             <option value="Profit">Profit</option>
                             <option value="Nonprofit">Non-Profit</option>
                             <option value="Government">Government</option>
-                        </td></select>
-                    </tr>
-                    <tr>
-                        <td><label>Compensation</label></td>
-                        <td><select data-val="true" data-val-required="The Compensation field is required." id="Compensation" name="Compensation">
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label>Compensation</label></td>
+                    <td><select data-val="true" data-val-required="The Compensation field is required."
+                                id="Compensation" name="Compensation">
                             <option selected="selected" value="All">All</option>
                             <option value="Paid">Paid</option>
                             <option value="Unpaid">Unpaid</option>
-                        </td></select>
-                    </tr>
-                    <tr>
-                        <td><label for="Employment">Full/Part Time</label>
-                        <td><select data-val="true" data-val-required="The Full/Part Time field is required." id="Employment" name="Employment">
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label for="Employment">Full/Part Time</label>
+                    <td><select data-val="true" data-val-required="The Full/Part Time field is required."
+                                id="Employment" name="Employment">
                             <option selected="selected" value="All">All</option>
                             <option value="FullTime">Full-Time</option>
                             <option value="PartTime">Part-Time</option>
-                        </td></select>
-                    </tr>
-                    <tr>
-                        <td><label>Submit</label></td>
-                        <td><input type="submit" value="Click" /></td>
-                    </tr>
-                    <tr>
-                        <td><label>Reset</label></td>
-                        <td><input type="reset" value="Click" /></td>
-                    </tr>
-                </table>
-            </form>
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label>Submit</label></td>
+                    <td><input type="submit" value="Click"/></td>
+                </tr>
+                <tr>
+                    <td><label>Reset</label></td>
+                    <td><input type="reset" value="Click"/></td>
+                </tr>
+            </table>
+        </form>
 
 
     </div>
 </div>
 
 
-
-
-
 <div class="css-slideshow">
-	<figure>
-		<img src="img/internsearch.png" alt="Fans" width="500" height="300" class="Fans"> 
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch1.png" alt="Fans1" width="500" height="300" class="Fans1"> 
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch2.jpg" alt="Fans2" width="500" height="300" class="Fans2">
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch3.jpg" alt="Fans3" width="500" height="300" class="Fans3"> 
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch5.jpg" alt="Fans5" width="500" height="300" class="Fans5">
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch6.png" alt="Fans6" width="500" height="300" class="Fans6">
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch7.jpg" alt="Fans7" width="500" height="300" class="Fans7">
-	</figure>
-	
-	<figure>
-		<img src="img/internsearch8.jpg" alt="Fans8" width="500" height="300" class="Fans8">
-	</figure>
-</div>  		
+    <figure>
+        <img src="img/internsearch.png" alt="Fans" width="500" height="300" class="Fans">
+    </figure>
 
+    <figure>
+        <img src="img/internsearch1.png" alt="Fans1" width="500" height="300" class="Fans1">
+    </figure>
 
+    <figure>
+        <img src="img/internsearch2.jpg" alt="Fans2" width="500" height="300" class="Fans2">
+    </figure>
 
+    <figure>
+        <img src="img/internsearch3.jpg" alt="Fans3" width="500" height="300" class="Fans3">
+    </figure>
 
+    <figure>
+        <img src="img/internsearch5.jpg" alt="Fans5" width="500" height="300" class="Fans5">
+    </figure>
 
+    <figure>
+        <img src="img/internsearch6.png" alt="Fans6" width="500" height="300" class="Fans6">
+    </figure>
+
+    <figure>
+        <img src="img/internsearch7.jpg" alt="Fans7" width="500" height="300" class="Fans7">
+    </figure>
+
+    <figure>
+        <img src="img/internsearch8.jpg" alt="Fans8" width="500" height="300" class="Fans8">
+    </figure>
+</div>
 
 
 <script type="text/javascript">
@@ -153,17 +152,16 @@
 
 <?php include "footer.html"; ?>
 <div class="copyRight">
-    <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook" href="https://www.facebook.com/itBison">facebook</a>
-        <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
+    <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook"
+                                              href="https://www.facebook.com/itBison">facebook</a>
+        <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a
+            class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
 </div>
 
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/dialogForm.js"></script>
-
-
-
 
 
 </body>

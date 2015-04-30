@@ -11,28 +11,29 @@
  *
  */
 
-;(function($) {
-    
+;
+(function ($) {
+
     // CSS properties which contain references to images. 
     $.waitForImages = {
         hasImageProperties: [
-        'backgroundImage',
-        'listStyleImage',
-        'borderImage',
-        'borderCornerImage'
+            'backgroundImage',
+            'listStyleImage',
+            'borderImage',
+            'borderCornerImage'
         ]
     };
-    
+
     // Custom selector to find `img` elements that have a valid `src` attribute and have not already loaded.
-    $.expr[':'].uncached = function(obj) {
+    $.expr[':'].uncached = function (obj) {
         // Firefox will always return `true` even if the image has not been downloaded.
-		// Doing it this way works in Firefox.
+        // Doing it this way works in Firefox.
         var img = document.createElement('img');
         img.src = obj.src;
-        return $(obj).is('img[src!=""]') && ! img.complete;
+        return $(obj).is('img[src!=""]') && !img.complete;
     };
-    
-    $.fn.waitForImages = function(finishedCallback, eachCallback, waitForAll) {
+
+    $.fn.waitForImages = function (finishedCallback, eachCallback, waitForAll) {
 
         // Handle options object.
         if ($.isPlainObject(arguments[0])) {
@@ -46,14 +47,15 @@
         eachCallback = eachCallback || $.noop;
 
         // Convert waitForAll to Boolean
-        waitForAll = !! waitForAll;
+        waitForAll = !!waitForAll;
 
         // Ensure callbacks are functions.
         if (!$.isFunction(finishedCallback) || !$.isFunction(eachCallback)) {
             throw new TypeError('An invalid callback was supplied.');
-        };
+        }
+        ;
 
-        return this.each(function() {
+        return this.each(function () {
             // Build a list of all imgs, dependent on what images will be considered.
             var obj = $(this),
                 allImgs = [];
@@ -62,9 +64,9 @@
                 // CSS properties which may contain an image.
                 var hasImgProperties = $.waitForImages.hasImageProperties || [],
                     matchUrl = /url\((['"]?)(.*?)\1\)/g;
-                
+
                 // Get all elements, as any one of them could have a background image.
-                obj.find('*').each(function() {
+                obj.find('*').each(function () {
                     var element = $(this);
 
                     // If an `img` element, add it. But keep iterating in case it has a background image too.
@@ -75,10 +77,10 @@
                         });
                     }
 
-                    $.each(hasImgProperties, function(i, property) {
+                    $.each(hasImgProperties, function (i, property) {
                         var propertyValue = element.css(property);
                         // If it doesn't contain this property, skip.
-                        if ( ! propertyValue) {
+                        if (!propertyValue) {
                             return true;
                         }
 
@@ -89,20 +91,22 @@
                                 src: match[2],
                                 element: element[0]
                             });
-                        };
+                        }
+                        ;
                     });
                 });
             } else {
                 // For images only, the task is simpler.
                 obj
-                 .find('img:uncached')
-                 .each(function() {
-                    allImgs.push({
-                        src: this.src,
-                        element: this
+                    .find('img:uncached')
+                    .each(function () {
+                        allImgs.push({
+                            src: this.src,
+                            element: this
+                        });
                     });
-                });
-            };
+            }
+            ;
 
             var allImgsLength = allImgs.length,
                 allImgsLoaded = 0;
@@ -110,24 +114,26 @@
             // If no images found, don't bother.
             if (allImgsLength == 0) {
                 finishedCallback.call(obj[0]);
-            };
+            }
+            ;
 
-            $.each(allImgs, function(i, img) {
-                
+            $.each(allImgs, function (i, img) {
+
                 var image = new Image;
-                
+
                 // Handle the image loading and error with the same callback.
-                $(image).bind('load error', function(event) {
+                $(image).bind('load error', function (event) {
                     allImgsLoaded++;
-                    
+
                     // If an error occurred with loading the image, set the third argument accordingly.
                     eachCallback.call(img.element, allImgsLoaded, allImgsLength, event.type == 'load');
-                    
+
                     if (allImgsLoaded == allImgsLength) {
                         finishedCallback.call(obj[0]);
                         return false;
-                    };
-                    
+                    }
+                    ;
+
                 });
 
                 image.src = img.src;
