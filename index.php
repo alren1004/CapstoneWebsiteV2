@@ -1,11 +1,9 @@
 <?php include "base.php"; ?>
 <!DOCTYPE html>
 <html>
-
-
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
     <link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/columns/css/dc_columns.css"/>
@@ -13,8 +11,6 @@
 </head>
 
 <body>
-
-
 <div class="wrapper">
 
     <?php
@@ -34,13 +30,12 @@
 
         <div class="box">
             <video controls preload="metadata" width="900" height="480">
-                <source src="video/Capstone.mp4" type="video/mp4; codecs=" avc1.42E01E, mp4a.40.2
-                ""> <!-- for IE -->
+                <source src="video/Capstone.mp4" type="video/mp4;" codecs="avc1.42E01E, mp4a.40.2"> <!-- for IE -->
             </video>
 
             <h2>Our mission</h2>
 
-            <p>Hello! Welcome to our website, IT&Bison. The purpose of website is to connect with each other to
+            <p>Hello! Welcome to our website, IT&amp;Bison. The purpose of website is to connect with each other to
                 share information
                 such as mentorships, feedbacks and advices reguarding jobs, internships and classes for the major of
                 students and alumni at Gallaudet University. I hope this website will be useful for you all and
@@ -50,12 +45,11 @@
 
     <?php include "footer.html"; ?>
     <div class="copyRight">
-        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook"
+        <p>&copy;Copyright 2015, IT&amp;Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook"
                                                   href="https://www.facebook.com/itBison">facebook</a>
             <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a
                 class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
     </div>
-</div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
