@@ -1,0 +1,2 @@
++ Add product images to this folder (460x576px)
++ Add detail images to this folder

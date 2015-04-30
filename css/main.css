@@ -1,19 +1,31 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    
 }
 
-html {
-	background-image: url("../img/chapelhall.jpg");
+body {
+    background-color: #ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
+
 
 .wrapper {
     min-height: 100%;
     position: relative;
-    width: 750px;
+    width: 1024px;
     margin: 0 auto;
+}
+
+.box {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.8;
 }
 
 .header {
@@ -23,6 +35,7 @@ html {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#04519b), color-stop(60%, #044687), to(#033769));
     background-image: linear-gradient(#04519b, #044687 60%, #033769);
     background-repeat: no-repeat;
+
 }
 
 .footer {
@@ -35,11 +48,15 @@ html {
     border-bottom: 1px solid #178acc;
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .container {
     padding: 10px 10px 80px;
-    background-color: antiquewhite;
+    background-image: url(../img/simpleBU.jpg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 ul {
@@ -54,9 +71,9 @@ li {
 }
 
 .headerNav li {
-    padding: 10px;
+    padding: 15px;
     display: block;
-    width: 160px;
+    width: 210px;
     text-align: center;
 }
 
@@ -67,8 +84,8 @@ li {
     transition: 0.5s color ease;
     text-decoration: none;
     text-align: center;
-    color: #81b3d2;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .headerNav a:hover {
@@ -108,15 +125,22 @@ li {
     width: 100%;
 }
 
+.headerNav {
+    padding-left: 50px;
+}
+
 .footerNav a:link, .footerNav a:visited {
     display: block;
-    width: 120px;
+    width: 494px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
-    padding: 10px;
+    padding: 9px;
     text-decoration: none;
     text-transform: uppercase;
+
+
+
 
     background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
     background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
@@ -138,11 +162,16 @@ li {
     filter: none;
     border-bottom: 1px solid #022241;
 }
+.footerNav{
+    text-align: center;
+
+
+}
 
 label {
     display: inline-block;
     width: 150px;
-    text-align: right;
+    text-align: left;
 }
 
 #introduction p {
@@ -157,107 +186,32 @@ label {
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-body{
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
+h2 {
+    font-size: 26px;
+    line-height: 1.5em;
+    color: #333333;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
 }
-.css-slideshow{
-  position: relative;
-  max-width: 500px;
-  height: 300px;
-  margin: 5em auto .5em auto;
+h3 {
+    font-size: 23px;
+    line-height: 1.5em;
+    color: #555555;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
 }
-.css-slideshow figure{
-  margin: 0;
-  max-width: 500px;
-  height: 300px;
-  background: #000;
-  position: absolute;
-}
-.css-slideshow img{
-  box-shadow: 0 0 2px #666;
-}
-.css-slideshow figcaption{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  background: rgba(0,0,0, .3);
-  font-size: .8em;
-  padding: 8px 12px;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-  transition: opacity .5s;
-  opacity: 1;
-}
-.css-slideshow-attr{
-  max-width: 500px;
-  text-align: right;
-  font-size: .7em;
-  font-style: italic;
-  margin:0 auto;
-}
-.css-slideshow-attr a{
-  color: #666;
-}
-.css-slideshow figure{
-  opacity:0;
-}
-figure:nth-child(1) {
-  animation: xfade 48s 42s infinite;
-}
-figure:nth-child(2) {
-  animation: xfade 48s 36s infinite;
-}
-figure:nth-child(3) {
-  animation: xfade 48s 30s infinite;
-}
-figure:nth-child(4) {
-  animation: xfade 48s 24s infinite;
-}
-figure:nth-child(5) {
-  animation: xfade 48s 18s infinite;
-}
-figure:nth-child(6) {
-  animation: xfade 48s 12s infinite;
-}
-figure:nth-child(7) {
-  animation: xfade 48s 6s infinite;
-}
-figure:nth-child(8) {
-  animation: xfade 48s 0s infinite;
+p {
+    font-size: 17px;
+    line-height: 1.5em;
+    color:#777777;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
 }
 
-@keyframes xfade{
-  0%{
-    opacity: 1;
-  }
-  10.5% {
-    opacity: 1;
-  }
-  12.5%{
-    opacity: 0;
-  }
-  98% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.copyRight {
+    text-align: center;
+    font-size: 10px;
 }
-
-
-
-
-
-
-
-
-
-
