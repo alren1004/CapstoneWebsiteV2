@@ -68,52 +68,33 @@
 
         <?php
 
-        if(!empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['comments'])){
+        if(!empty($_POST['email'])){
             $name = $_POST['name'];
             $email = $_POST['email'];
             $subject = $_POST['subject'];
-            $comments = $_POST['comments'];
+            $comments = $_POST['message'];
             $headers = "From: " . $email . "\r\n" . "Cc: daniel.heidemeyer@gallaudet.edu, sung.an@gallaudet.edu\r\n";
             if(mail("timothy.yu@gallaudet.edu", $subject, $comments, $headers)){
-                echo "<p>Email sent!</p>";
+                echo "<p style='color:green;'>Email successfully sent! Please wait up to 24 hours for a response.</p>";
             } else {
-                echo "<p>Email not sent.</p>";
+                echo "<p style='color:red;'>Email not sent. Try again.</p>";
             }
         } else {
-            ?>
-
-            <!--<form action="contact_us.php" method="post" enctype="text/plain">
-                    <fieldset>
-                        <legend><h3>Contact Information</h3></legend>
-                        <label for="name">Name:</label>
-                        <input id="name" type="text" name="name" autofocus required><br>
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" name="email" required><br>
-                        <label for="subject">Subject:</label>
-                        <input id="subject" type="subject" name="subject" required><br>
-                        <label for="comments">Comment:</label>
-                        <textarea id="comments" name="comments"
-                                  placeholder="Please type here if you have any comment."></textarea><br>
-                    </fieldset>
-                    <fieldset>
-                        <input type="submit" name="submit" id="submit" value="Submit">
-                        <input type="reset" name="reset" id="reset" value="Reset"><br>
-                    </fieldset>
-            </form> -->
+            echo '
             <!-- DC Contact Form Start -->
             <!-- DC [Columns: L/Sidebar + Body] Start -->
             <div align="center" ><h2>Contact</h2></div>
             <div class="dc_hrline_black" style="width:99%; "></div>
             <div class="one_third_pad">
-                 <form action="" class="dc_form_contact_light">
+                 <form action="contact_us.php" method="post" class="dc_form_contact_light">
                         <label for="name">Name <span>(required)</span></label>
-                        <input type="text" name="name" class="form-input" required />
+                        <input type="text" name="name" class="form-input" id="name" required />
                         <label for="email">Email <span>(required)</span></label>
-                        <input type="email" name="email" class="form-input" required />
+                        <input type="email" name="email" class="form-input" id="email" required />
                         <label for="subject">Subject <span>(optional)</span></label>
-                        <input type="text" name="subject" class="form-input" />
+                        <input type="text" name="subject" class="form-input" id="subject" />
                         <label for="message">Message <span>(required)</span></label>
-                        <textarea name="message" class="form-input" required></textarea>
+                        <textarea name="message" class="form-input" id="message" required></textarea>
                         <input class="form-btn" type="submit" value="Send Message" />
                       </form>
             </div>
@@ -130,9 +111,7 @@
             <!-- DC [Columns: L/Sidebar + Body] End -->
             <div class="dc_clear"></div> <!-- line break/clear line -->
              
-                  
-
-        <?php
+                  ';
         }
     ?>
     </div>
