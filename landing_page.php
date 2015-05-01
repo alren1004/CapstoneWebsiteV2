@@ -7,6 +7,9 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 </head>
 <body>
 
