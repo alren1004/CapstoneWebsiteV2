@@ -1,4 +1,8 @@
+<div>
+    <h4><a href="profile_listings.php">View list of registered users.</a></h4>
+</div>
 <div id="profile-display">
+    <h1><?= $first_name; ?> <?= $last_name; ?>'s Profile</h1>
     <table class="profileTable">
         <tr>
             <td>First name: </td>

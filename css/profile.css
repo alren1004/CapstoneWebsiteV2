@@ -9,11 +9,11 @@ h4 {
     color: black;
 }
 
-.profileTable {
+.profileTable, .allProfilesTable {
     border-collapse: collapse;
 }
 
-.profileTable th, td {
+.profileTable th, td, .allProfilesTable th, td {
     padding: 10px;
     border: 1px solid gray;
 }
