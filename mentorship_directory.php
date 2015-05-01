@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/form.css"/>
     <link rel="stylesheet" type="text/css" href="css/mentorships.css">
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+
+    <link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/columns/css/dc_columns.css"/>
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 </head>
 <body>
 

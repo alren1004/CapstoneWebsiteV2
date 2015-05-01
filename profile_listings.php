@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/form.css"/>
     <link rel="stylesheet" type="text/css" href="css/profile.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+
+    <link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/columns/css/dc_columns.css"/>
+    <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 </head>
 <body>
 
@@ -64,16 +67,6 @@
             }
             echo "</table>";
         }
-
-        $profile_row = mysql_fetch_array($get_profile_info);
-
-        $profile_id = $profile_row['profile_id'];
-        $first_name = $profile_row['first_name'];
-        $last_name = $profile_row['last_name'];
-        $background = $profile_row['background'];
-        $education = $profile_row['education'];
-        $skills = $profile_row['skills'];
-        $role = $profile_row['role'];
 
         ?>
     </div>
