@@ -28,10 +28,10 @@
     <div class="container">
         <?php
 
-                $get_profile_info = mysql_query("SELECT * FROM profiles");
-                if ($get_profile_info) {
-                    echo
-                    "<h1 align='center'>Registered Users</h1>
+        $get_profile_info = mysql_query("SELECT * FROM profiles");
+        if ($get_profile_info) {
+            echo
+            "<h1 align='center'>Registered Users</h1>
                             <table class='allProfilesTable' align='center'>
                                 <tr>
                                     <th>Profile ID</th>
@@ -42,38 +42,38 @@
                                     <th>Skills</th>
                                     <th>Role</th>
                                 </tr>";
-                    // fetch each record in result set
-                    for ($counter = 0; $row = mysql_fetch_row($get_profile_info); ++$counter) {
-                        // build table to display results
-                        print("<tr>");
+            // fetch each record in result set
+            for ($counter = 0; $row = mysql_fetch_row($get_profile_info); ++$counter) {
+                // build table to display results
+                print("<tr>");
 
-                        $count = 1;
-                        foreach ($row as $key => $value){
-                            if($count != 8){
-                                if($count == 1){
-                                    print("<td><a href='view_profile.php?user_id=$value'>$value</a></td>");
-                                } else {
-                                    print("<td>$value</td>");
-                                }
-                            }
-                            $count++;
+                $count = 1;
+                foreach ($row as $key => $value) {
+                    if ($count != 8) {
+                        if ($count == 1) {
+                            print("<td><a href='view_profile.php?user_id=$value'>$value</a></td>");
+                        } else {
+                            print("<td>$value</td>");
                         }
-
-
-                        print("</tr>");
                     }
-                    echo "</table>";
+                    $count++;
                 }
 
-                $profile_row = mysql_fetch_array($get_profile_info);
 
-                $profile_id = $profile_row['profile_id'];
-                $first_name = $profile_row['first_name'];
-                $last_name = $profile_row['last_name'];
-                $background = $profile_row['background'];
-                $education = $profile_row['education'];
-                $skills = $profile_row['skills'];
-                $role = $profile_row['role'];
+                print("</tr>");
+            }
+            echo "</table>";
+        }
+
+        $profile_row = mysql_fetch_array($get_profile_info);
+
+        $profile_id = $profile_row['profile_id'];
+        $first_name = $profile_row['first_name'];
+        $last_name = $profile_row['last_name'];
+        $background = $profile_row['background'];
+        $education = $profile_row['education'];
+        $skills = $profile_row['skills'];
+        $role = $profile_row['role'];
 
         ?>
     </div>
@@ -83,23 +83,5 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/dialogForm.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#edit").click(function () {
-            $("#profile-display").toggle();
-            $("#profile-edit-form").toggle();
-            $(this).toggle();
-            $("#status").hide();
-            /*
-             var value = $(this).attr("value");
-             if (value === "Edit"){
-             $(this).prop("value", "Save");
-             } else {
-             $(this).prop("value", "Edit");
-             }
-             */
-        })
-    })
-</script>
 </body>
 </html>

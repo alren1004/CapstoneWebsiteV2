@@ -56,9 +56,12 @@
             <h3 id="Timothy Yu">Timothy Yu (Technology Specialist)</h3>
 
             <p>
-                <strong>Timothy Yu</strong> is a Honors IT and Mathematics Major at Gallaudet University. Timothy has worked
-                in three internships for Ventana Medical Systems, University of Washington, and Gallaudet University. Timothy
-                has strong skills in computer science and mathematics, and is very knowledgeable in his field. Timothy is
+                <strong>Timothy Yu</strong> is a Honors IT and Mathematics Major at Gallaudet University. Timothy has
+                worked
+                in three internships for Ventana Medical Systems, University of Washington, and Gallaudet University.
+                Timothy
+                has strong skills in computer science and mathematics, and is very knowledgeable in his field. Timothy
+                is
                 currently focusing on Android application development, as the mobile technology field is a hot and very
                 interesting topic.
             </p>
@@ -101,12 +104,6 @@
     </div>
 
     <?php include "footer.html"; ?>
-    <div class="copyRight">
-        <p>&copy;Copyright 2015, IT&Bison&nbsp;<a class="facebook_square32 dc_social_square32" title="facebook"
-                                                  href="https://www.facebook.com/itBison">facebook</a>
-            <a class="twitter2_square32 dc_social_square32" title="twitter" href="#">twitter</a><a
-                class="instagram_square32 dc_social_square32" title="instagram" href="#">instagram</a></p>
-    </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
