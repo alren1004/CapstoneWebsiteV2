@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
 }
 
+p {
+    color: black;
+}
+
 .wrapper {
     min-height: 100%;
     position: relative;

@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mentorships.css">
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
 </head>
 <body>
@@ -34,35 +36,6 @@
                 $role = mysql_fetch_array($get_role)['role'];
                 if (strcasecmp($role, "Mentor") == 0) {
                     include "mentorRegistrationForm.html";
-                    echo "Your mentorships:";
-                    $get_own_mentorships = mysql_query("SELECT * FROM mentors WHERE profile_id=" . $_SESSION['profile_id'] . "");
-                    if (mysql_num_rows($check_username) == 0) {
-                        echo "<p>You have no mentorships.</p>";
-                    } else {
-                        echo
-                        "<h1 align='center'>Your Mentorships</h1>
-                            <table align='center'>
-                                <tr>
-                                    <th>Number:</th>
-                                    <th>Profile:</th>
-                                    <th>Description:</th>
-                                    <th>Years:</th>
-                                    <th>Field:</th>
-                                    <th>Start Date:</th>
-                                    <th>End Date:</th>
-                                </tr>";
-                        // fetch each record in result set
-                        for ($counter = 0; $row = mysql_fetch_row($get_own_mentorships); ++$counter) {
-                            // build table to display results
-                            print("<tr>");
-
-                            foreach ($row as $key => $value)
-                                print("<td>$value</td>");
-
-                            print("</tr>");
-                        }
-                        echo "</table>";
-                    }
                 }
             }
 
@@ -70,24 +43,30 @@
             if ($get_mentorships) {
                 echo
                 "<h1 align='center'>Available Mentorships</h1>
-                            <table align='center'>
+                            <table class='mentorshipTable' align='center'>
                                 <tr>
-                                    <th>Number:</th>
-                                    <th>Profile:</th>
-                                    <th>Description:</th>
-                                    <th>Years:</th>
-                                    <th>Field:</th>
-                                    <th>Start Date:</th>
-                                    <th>End Date:</th>
+                                    <th>Mentorship ID</th>
+                                    <th>Mentor ID</th>
+                                    <th>Description</th>
+                                    <th>Years of Experience</th>
+                                    <th>Field</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
                                 </tr>";
                 // fetch each record in result set
                 for ($counter = 0; $row = mysql_fetch_row($get_mentorships); ++$counter) {
                     // build table to display results
                     print("<tr>");
 
-                    foreach ($row as $key => $value)
-                        print("<td>$value</td>");
-
+                    $count = 0;
+                    foreach ($row as $key => $value) {
+                        if ($count == 1) {
+                            print("<td><a href='view_profile.php?user_id=$value'>$value</a></td>");
+                        } else {
+                            print("<td>$value</td>");
+                        }
+                        $count++;
+                    }
                     print("</tr>");
                 }
                 echo "</table>";
@@ -103,7 +82,7 @@
                     <table border='0' cellspacing='0' cellpadding='4'  style='padding:0px; border:1px  #ccc; '>
                         <tr>
                             <td><label for='username'>Username:</label></td>
-                            <td><input name='username' type='text' id='username' required='true' size='25' /></td>
+                            <td ><input name='username' type='text' id='username' required='true' size='25' /></td>
                         </tr>
                         <tr>
                             <td><label for='password'>Password:</label></td>

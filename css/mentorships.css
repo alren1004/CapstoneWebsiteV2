@@ -1,0 +1,24 @@
+.mentorshipTable table {
+    background-color: white;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.mentorshipTable th, td {
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.mentorshipTable tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+.mentorshipTable tr:first-child {
+    background-color: lightblue;
+}
+
+.mentorshipTable td a:active a:visited {
+    color: white;
+}

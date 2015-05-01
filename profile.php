@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profile.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="dcodes/social_icons/dc_social_icons.css"/>
 </head>
@@ -53,9 +54,9 @@
                 $role = $_POST['role'];
                 $save_profile = mysql_query("UPDATE profiles SET background='" . $background . "', education='" . $education . "', skills='" . $skills . "', role='" . $role . "' WHERE profile_id =" . $profile_id . "");
                 if ($save_profile) {
-                    echo "<p id='status' style='background-color: green;'>Data saved successfully.</p>";
+                    echo "<p id='status' style='background-color: green; color:white;'>Profile saved successfully.</p>";
                 } else {
-                    echo "<p id='status' style='background-color: red;>Error saving data.</p>";
+                    echo "<p id='status' style='background-color: red; color:white;>Error saving data.</p>";
                 }
                 unset($_POST['background']);
                 unset($_POST['education']);

@@ -1,8 +1,19 @@
-p {
-    margin: 100px 150px 10px 50px;
-}
 
 h4 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.heading {
+    font-weight: bold;
+    color: black;
+}
+
+.profileTable {
+    border-collapse: collapse;
+}
+
+.profileTable th, td {
+    padding: 10px;
+    border: 1px solid gray;
 }
