@@ -56,15 +56,11 @@
             <h3 id="Timothy Yu">Timothy Yu (Technology Specialist)</h3>
 
             <p>
-                <strong>Timothy Yu</strong> is the information specialist of Gallaudet University. Things are moving
-                quickly for Timothy Yu.
-                Less than two years after graduating with a computer science degree from Gallaudet University, Timothy
-                was promoted to Microsoft’s Mobile Computing Research Center, part of Microsoft Research.
-                Now working on emerging technology that will be used for marrying the phone and the cloud, Timothy
-                joined the PMP in Autumn 2014 mostly because, “I like learning new things, especially from people who
-                know it well and have been immersed in the field for years.”
-                And where does Timothy want to go with this new knowledge? “In the future I see myself moving into a
-                higher level of design and architecture.”
+                <strong>Timothy Yu</strong> is a Honors IT and Mathematics Major at Gallaudet University. Timothy has worked
+                in three internships for Ventana Medical Systems, University of Washington, and Gallaudet University. Timothy
+                has strong skills in computer science and mathematics, and is very knowledgeable in his field. Timothy is
+                currently focusing on Android application development, as the mobile technology field is a hot and very
+                interesting topic.
             </p>
 
             <br><br><br>
