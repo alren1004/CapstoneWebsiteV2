@@ -45,7 +45,7 @@
 
             if ($mentors_insert_query) {
                 echo "<h1>Success</h1>";
-                echo "<p>Your mentor registration was successfully saved. Thank you for registration!</p>";
+                echo "<p>Your mentorship was successfully saved. Thank you for becoming a mentor! <a href='mentorship_directory.php'>Click here to go back to mentorship directory.</a></p>";
             } else {
                 echo "<h1>Error inserting into mentor registration</h1>";
                 echo "<p>Sorry, your registration failed. Please try again.</p>";
