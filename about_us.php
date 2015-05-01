@@ -51,8 +51,9 @@
         <article>
             <h2 id="the-team">The Team</h2>
 
-            <h3 id="Timothy Yu">Timothy Yu (Technology Specialist)</h3>
             <img src="img/Timothy.jpg" alt="Timothy Yu" width="133.6" height="216">
+
+            <h3 id="Timothy Yu">Timothy Yu (Technology Specialist)</h3>
 
             <p>
                 <strong>Timothy Yu</strong> is the information specialist of Gallaudet University. Things are moving
@@ -72,6 +73,7 @@
         <article>
 
             <h3 id="Sung An">Sung An (Information Technology)</h3>
+
             <img src="img/Sung.jpg" alt="Sung" width="179" height="240">
 
             <p>
@@ -89,6 +91,7 @@
         <article>
 
             <h3 id="Daniel Heidemeyer">Daniel Heidemeyer (Information Technology)</h3>
+
             <img src="img/Daniel.jpg" alt="Daniel Heidemeyer" width="180" height="240">
 
             <p>
